@@ -8,7 +8,7 @@ show_software: false
 ---
 {% assign profile=site.data.homepage %}
 <h1 class="section-title" id="about">😉 About Me</h1>
-{% for paragraph in profile.bio %}<div class="md-block"><p><span aria-hidden="true">{% if forloop.index == 1 %}🌱{% elsif forloop.index == 2 %}🔭{% else %}💻{% endif %}</span> {{ paragraph }}</p></div>{% endfor %}
+{% for paragraph in profile.bio %}<div class="md-block"><p><span aria-hidden="true">{% if forloop.index == 1 %}🌱{% elsif forloop.index == 2 %}🔭{% else %}💻{% endif %}</span> {% if forloop.index == 2 %}{{ site.data.research.summary }}{% else %}{{ paragraph }}{% endif %}</p></div>{% endfor %}
 <div class="md-block"><p><span aria-hidden="true">📫</span> How to reach me: <a href="mailto:{{ profile.email }}">{{ profile.email }}</a>.</p></div>
 <div class="badge-row">
   <a href="{{ profile.github }}" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/stars/JonahJia" alt="GitHub stars" loading="lazy"></a>

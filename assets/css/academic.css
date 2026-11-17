@@ -69,10 +69,10 @@ h1, h2, h3 { line-height: 1.3; }
 .paper-copy h3 a { color: var(--ink); }
 .paper-copy h3 a:hover { color: var(--blue); }
 .paper-authors { font-size: 15px; line-height: 1.9; margin: 0 0 10px; }
-.paper-authors a { color: inherit; text-decoration: underline; text-decoration-color: #c7ced9; text-underline-offset: 3px; }
-.paper-authors a:hover { color: var(--blue); text-decoration-color: currentColor; }
+.paper-authors a { color: inherit; text-decoration: none; }
+.paper-authors a:hover { color: var(--blue); text-decoration: none; }
 .author-self { font-weight: 750; color: var(--purple); }
-.equal-mark { font-size: .78em; line-height: 0; vertical-align: super; margin-left: 1px; }
+.equal-mark, .corresponding-mark { font-size: .78em; line-height: 0; vertical-align: super; margin-left: 1px; }
 .conference-name { font-style: italic; color: var(--muted); font-size: 14px; line-height: 1.6; margin: 0 0 12px; }
 .paper-distinctions { display: flex; flex-wrap: wrap; gap: 7px; margin: 0 0 12px; }
 .paper-distinctions span { padding: 2px 9px; border-radius: 5px; font-size: 12px; font-weight: 650; background: #edf2ff; color: #2858bc; }

@@ -23,7 +23,12 @@
     ],
     "links": {
       "Paper": "https://aclanthology.org/2026.acl-long.290/"
-    }
+    },
+    "corresponding_authors": [
+      "Jiajun Bu",
+      "Lei Wu"
+    ],
+    "corresponding_author_source": "https://aclanthology.org/2026.acl-long.290.pdf"
   },
   {
     "id": "amp",
@@ -47,7 +52,12 @@
     "links": {
       "Paper": "https://link.springer.com/chapter/10.1007/978-3-032-37321-2_17",
       "arXiv": "https://arxiv.org/abs/2603.08374"
-    }
+    },
+    "corresponding_authors": [
+      "Xian Wu",
+      "Yefeng Zheng"
+    ],
+    "corresponding_author_source": "https://link.springer.com/chapter/10.1007/978-3-032-37321-2_17"
   },
   {
     "id": "geoproto",
@@ -72,7 +82,12 @@
     ],
     "links": {
       "Paper": "https://arxiv.org/abs/2509.17050"
-    }
+    },
+    "corresponding_authors": [
+      "Junhao Jia",
+      "Feiwei Qin"
+    ],
+    "corresponding_author_source": "https://arxiv.org/pdf/2509.17050"
   },
   {
     "id": "dodr",
@@ -100,7 +115,12 @@
     "links": {
       "Paper": "https://papers.miccai.org/miccai-2026/0285-Paper1292.html",
       "Code": "https://github.com/HovChen/D-ODR"
-    }
+    },
+    "corresponding_authors": [
+      "Jiajun Bu",
+      "Lei Wu"
+    ],
+    "corresponding_author_source": "https://papers.miccai.org/miccai-2026/paper/1292_paper.pdf"
   },
   {
     "id": "more-natural",
@@ -120,7 +140,12 @@
     ],
     "links": {
       "Paper": "https://openaccess.thecvf.com/content/CVPR2026/html/Jing_More_Natural_More_Real_Object-aware_Gaussian_Splatting_for_3D_Visual_CVPR_2026_paper.html"
-    }
+    },
+    "corresponding_authors": [
+      "Yongqiang Ma",
+      "Nanning Zheng"
+    ],
+    "corresponding_author_source": "https://openaccess.thecvf.com/content/CVPR2026/papers/Jing_More_Natural_More_Real_Object-aware_Gaussian_Splatting_for_3D_Visual_CVPR_2026_paper.pdf"
   },
   {
     "id": "beyond-individual",
@@ -144,7 +169,12 @@
     "links": {
       "Paper": "https://aclanthology.org/2026.findings-acl.789/",
       "Code": "https://github.com/HovChen/Aegle"
-    }
+    },
+    "corresponding_authors": [
+      "Haishuai Wang",
+      "Lei Wu"
+    ],
+    "corresponding_author_source": "https://aclanthology.org/2026.findings-acl.789.pdf"
   },
   {
     "id": "wdt-md",
@@ -166,6 +196,12 @@
       "Paper": "https://ojs.aaai.org/index.php/AAAI/article/view/37882",
       "Code": "https://github.com/diaoquesang/WDT-MD",
       "Page": "https://diaoquesang.github.io/WDT-MD-Project-Page/"
-    }
+    },
+    "corresponding_authors": [
+      "Ruiquan Ge",
+      "Changmiao Wang",
+      "Hongxia Xu"
+    ],
+    "corresponding_author_source": "https://diaoquesang.github.io/WDT-MD-Project-Page/"
   }
 ]

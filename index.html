@@ -20,7 +20,7 @@ show_additional_sections: false
 </header>
 <section id="about" class="about-section" aria-labelledby="about-heading">
   <h2 id="about-heading" class="about-heading">About Me</h2>
-  {% for paragraph in profile.bio %}<p>{{ paragraph }}</p>{% endfor %}
+  {% for paragraph in profile.bio %}<p>{% if forloop.index == 2 %}{{ site.data.research.summary }}{% else %}{{ paragraph }}{% endif %}</p>{% endfor %}
 </section>
 {% include academic/experience.html id="education" icon="📖" title="Education" entries=profile.education %}
 {% include academic/experience.html id="research-experience" icon="💻" title="Research Experience" entries=profile.experience %}
