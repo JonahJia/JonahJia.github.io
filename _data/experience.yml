@@ -1,0 +1,39 @@
+[
+  {
+    "institution": "Ant Group",
+    "role": "Intern",
+    "period": "2026.11 to Present",
+    "logos": [
+      "ant"
+    ],
+    "description": "<a href=\"https://www.antgroup.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Ant Group</a>. Supervised by <a href=\"https://xinhao-deng.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Xinhao Deng</a>."
+  },
+  {
+    "institution": "Westlake University & Tencent Jarvis Lab",
+    "role": "Joint Research Intern",
+    "period": "2026.01 to 2026.07",
+    "logos": [
+      "westlake_medai",
+      "tencent"
+    ],
+    "description": "<a href=\"https://medai.lab.westlake.edu.cn/index.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Medical Artificial Intelligence Laboratory, Westlake University</a> &amp; <a href=\"https://jarvislab.tencent.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Tencent Jarvis Lab</a>. Supervised by <a href=\"https://sites.google.com/site/yefengzheng\" target=\"_blank\" rel=\"noopener noreferrer\">Yefeng Zheng</a> at Westlake University and supervised by <a href=\"https://github.com/JackeyWang96\" target=\"_blank\" rel=\"noopener noreferrer\">Jiaqi Wang</a> at Tencent."
+  },
+  {
+    "institution": "Eagle Lab, Zhejiang University",
+    "role": "Research Intern",
+    "period": "2025.10 to 2026.01",
+    "logos": [
+      "eagle"
+    ],
+    "description": "<a href=\"https://eagle.zju.edu.cn/\" target=\"_blank\" rel=\"noopener noreferrer\">Eagle Lab</a>, <a href=\"https://www.zju.edu.cn/english/\" target=\"_blank\" rel=\"noopener noreferrer\">Zhejiang University</a>. Supervised by <a href=\"https://person.zju.edu.cn/en/0000152/831687.html\" target=\"_blank\" rel=\"noopener noreferrer\">Jiajun Bu</a>."
+  },
+  {
+    "institution": "Shenzhen Research Institute of Big Data",
+    "role": "Research Intern",
+    "period": "2024.06 to 2025.07",
+    "logos": [
+      "sribd"
+    ],
+    "description": "<a href=\"https://www.sribd.cn/\" target=\"_blank\" rel=\"noopener noreferrer\">Shenzhen Research Institute of Big Data</a>. Supervised by <a href=\"https://jiandanjinxin.github.io/changmiaowang/\" target=\"_blank\" rel=\"noopener noreferrer\">Changmiao Wang</a>."
+  }
+]

@@ -8,7 +8,8 @@ Live site: https://jonahjia.github.io/
 
 | Content | File |
 | --- | --- |
-| Bio, contact details, education and experience | `_data/homepage.yml` |
+| Bio, contact details and education | `_data/homepage.yml` |
+| Research experience | `_data/experience.yml` |
 | Current research statement | `_data/research.yml` |
 | Honors, funding and competitions | `_data/honors.yml`, `_data/funding.yml`, `_data/competitions.yml` |
 | Patent publication and grant records | `_data/patents.yml` |
@@ -16,7 +17,7 @@ Live site: https://jonahjia.github.io/
 | Unified reviewer services | `_data/services.yml` |
 | Open source projects | `_data/open_source.yml` |
 | Institution logos | `_data/institutions.yml` |
-| All publication metadata, ordered full authors, verified links and framework images | `_data/papers.yml` |
+| Conference and preprint metadata, ordered full authors, verified links and framework images | `_data/papers.yml`, `_data/preprints.yml` |
 | Author highlighting and personal homepage links | `_data/paper_authors.yml` |
 | Dated conference news | `_data/updates.yml` |
 | Navigation | `_data/navigation.yml` |
@@ -24,7 +25,7 @@ Live site: https://jonahjia.github.io/
 | Reusable page sections | `_includes/academic/` |
 | Styling and framework image enlargement | `assets/css/academic.css`, `assets/js/academic.js` |
 
-The data files use JSON syntax, which is valid YAML and is read by Jekyll. Education and research experience precede news and publications. Three selected first-author papers use image cards; the other four publications use compact entries. Each framework image opens at a larger size. Full author lists are retained, with Junhao Jia highlighted in Tsinghua purple (`#660874`) and equal contributions marked with `*`.
+The data files use JSON syntax, which is valid YAML and is read by Jekyll. Education and research experience precede news and publications. Conference Papers displays three selected first-author papers as image cards and five additional publications as compact entries. Preprint Papers follows with two image cards, ordered CausalProto then DeBoneDiT. Each framework image opens at a larger size. Full author lists are retained, with Junhao Jia highlighted in Tsinghua purple (`#660874`) and equal contributions marked with `*`.
 
 The site uses a single-page layout: Home jumps to the top, and Publications jumps to the homepage’s publications section. The old `/publications.html` URL redirects to `/#publications`. Publication resource buttons are currently hidden; their link metadata is retained for later use.
 

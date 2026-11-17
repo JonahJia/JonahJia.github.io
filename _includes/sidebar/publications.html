@@ -1,25 +1,23 @@
 <h1 class="section-title" id="publications">💡 Publications</h1>
 <p class="pub-note"><sup>*</sup>: Equal Contribution; <sup>†</sup>: Corresponding Author</p>
+<h2 class="sub-title">Conference Papers</h2>
 {% for paper in site.data.papers %}{% if paper.featured %}
-<article class="work-card featured-paper" id="paper-{{ paper.id }}">
-  <div class="work-media">
-    <span class="badge">{% include academic/venue_label.html paper=paper %}</span>
-    <a class="figure-trigger" href="{{ paper.cover | relative_url }}" data-figure-caption="{{ paper.title | escape }}" aria-label="Enlarge framework diagram for {{ paper.title | escape }}"><img src="{{ paper.cover | relative_url }}" alt="{{ paper.alt | escape }}" loading="lazy"></a>
-  </div>
-  <div class="work-body">
-    <h3 class="work-title"><a href="{{ paper.links.Paper }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a></h3>
-    {% include academic/authors.html paper=paper %}
-    <p class="work-venue"><i>{{ paper.conference }}</i></p>
-  </div>
-</article>
+{% include sidebar/featured_paper.html paper=paper %}
 {% endif %}{% endfor %}
 <div class="scroll-box publications-scroll" tabindex="0" role="region" aria-label="More conference papers"><ul class="paper-list">
 {% for paper in site.data.papers %}{% unless paper.featured %}
 <li class="paper-row" id="paper-{{ paper.id }}">
-  <div class="paper-row-top"><span class="highlight">{{ paper.venue }}</span><a class="paper-title" href="{{ paper.links.Paper }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a></div>
+  <div class="paper-row-top"><span class="highlight">{% include academic/venue_label.html paper=paper %}</span><a class="paper-title" href="{{ paper.links.Paper }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a></div>
   {% include academic/authors.html paper=paper %}
   <div class="paper-venue"><i>{{ paper.conference }}</i></div>
 </li>
 {% endunless %}{% endfor %}
 </ul></div><div class="scroll-hint"><span aria-hidden="true">⬆</span> Scrollable</div>
 
+
+{% if site.data.preprints.size > 0 %}
+<h2 class="sub-title">Preprint Papers</h2>
+{% for paper in site.data.preprints %}
+{% include sidebar/featured_paper.html paper=paper %}
+{% endfor %}
+{% endif %}

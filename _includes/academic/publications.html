@@ -1,32 +1,28 @@
 <section id="publications" class="academic-section" aria-labelledby="publications-heading">
   <h2 class="section-heading" id="publications-heading"><span aria-hidden="true">📝</span> {% if include.dedicated %}Conference Papers{% else %}Selected Publications{% endif %}</h2>
   <p class="contribution-note"><sup>*</sup> Equal contribution. <sup>†</sup> Corresponding author.</p>
+  <h3 class="publication-subheading">Conference Papers</h3>
   <div class="featured-papers">
     {% for paper in site.data.papers %}{% if paper.featured %}
-    <article class="surface paper-card" id="paper-{{ paper.id }}">
-      <div class="paper-visual">
-        <span class="venue-badge">{% include academic/venue_label.html paper=paper %}</span>
-        <a href="{{ paper.cover | relative_url }}" class="figure-trigger" data-figure-caption="{{ paper.title | escape }}" aria-label="Enlarge framework diagram for {{ paper.title | escape }}">
-          <img src="{{ paper.cover | relative_url }}" alt="{{ paper.alt | escape }}" loading="lazy">
-          <span class="figure-zoom">View framework <svg class="external-icon" aria-hidden="true" viewBox="0 0 16 16"><path d="M4 12 12 4M4 4h8v8"/></svg></span>
-        </a>
-      </div>
-      <div class="paper-copy">
-        <h3><a href="{{ paper.links.Paper }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a></h3>
-        {% include academic/authors.html paper=paper %}
-        <p class="conference-name">{{ paper.conference }}</p>
-      </div>
-    </article>
+    {% include academic/featured_paper.html paper=paper %}
     {% endif %}{% endfor %}
   </div>
   <div class="surface other-papers">
     {% for paper in site.data.papers %}{% unless paper.featured %}
     <article class="compact-paper" id="paper-{{ paper.id }}">
-      <span class="compact-venue">{{ paper.venue }}</span>
+      <span class="compact-venue">{% include academic/venue_label.html paper=paper %}</span>
       <h3><a href="{{ paper.links.Paper }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a></h3>
       {% include academic/authors.html paper=paper %}
       <p class="conference-name">{{ paper.conference }}</p>
     </article>
     {% endunless %}{% endfor %}
   </div>
+  {% if site.data.preprints.size > 0 %}
+  <h3 class="publication-subheading">Preprint Papers</h3>
+  <div class="featured-papers preprint-papers">
+    {% for paper in site.data.preprints %}
+    {% include academic/featured_paper.html paper=paper %}
+    {% endfor %}
+  </div>
+  {% endif %}
 </section>

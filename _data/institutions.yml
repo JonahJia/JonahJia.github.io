@@ -26,5 +26,14 @@
   "sribd": {
     "name": "Shenzhen Research Institute of Big Data",
     "image": "/assets/images/logos/sribd-reference.png"
+  },
+  "westlake_medai": {
+    "name": "Medical Artificial Intelligence Laboratory, Westlake University",
+    "image": "/assets/images/logos/westlake-medai.png",
+    "dark_background": true
+  },
+  "eagle": {
+    "name": "Eagle Lab, Zhejiang University",
+    "image": "/assets/images/logos/eagle-lab.png"
   }
 }

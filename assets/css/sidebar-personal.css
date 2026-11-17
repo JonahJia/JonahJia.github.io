@@ -32,7 +32,6 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 3px s
 .featured-paper .badge { position: static; align-self: flex-start; margin: 10px 10px 0; }
 .figure-trigger { display: block; width: 100%; padding: 8px 8px 12px; cursor: zoom-in; }
 .work-card .figure-trigger img { width: 100%; height: auto; padding: 0; aspect-ratio: auto; }
-.publications-scroll .paper-row:nth-child(even) { background: transparent; }
 .scroll-box { overscroll-behavior: contain; }
 .item-body { min-width: 0; }
 .software-media { display: flex; flex-direction: column; align-items: stretch; }
@@ -67,3 +66,5 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 3px s
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; }
 }
+
+img.logo-dark-background { background: #031633; padding: 5px 7px; border-radius: 5px; }

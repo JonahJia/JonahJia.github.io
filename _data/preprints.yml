@@ -1,0 +1,58 @@
+[
+  {
+    "id": "causalproto",
+    "title": "Unsupervised Causal Prototypical Networks for De-biased Interpretable Dermoscopy Diagnosis",
+    "venue": "arXiv 2026",
+    "conference": "arXiv",
+    "year": 2026,
+    "cover": "/assets/images/publications/causalproto-framework.png",
+    "alt": "CausalProto framework showing training with causal and spurious prototype spaces and inference with causal backdoor adjustment.",
+    "authors": [
+      "Junhao Jia",
+      "Yueyi Wu",
+      "Huangwei Chen",
+      "Haodong Jing",
+      "Haishuai Wang",
+      "Jiajun Bu",
+      "Lei Wu"
+    ],
+    "links": {
+      "Paper": "https://arxiv.org/abs/2602.23752"
+    },
+    "corresponding_authors": [
+      "Jiajun Bu",
+      "Lei Wu"
+    ],
+    "corresponding_author_source": "https://arxiv.org/pdf/2602.23752v1"
+  },
+  {
+    "id": "debonedit",
+    "title": "DeBoneDiT: Depth-Driven Conditional Bridge Diffusion Transformers for Bone Suppression in Chest X-Ray Images",
+    "venue": "arXiv 2026",
+    "conference": "arXiv",
+    "year": 2026,
+    "cover": "/assets/images/publications/debonedit-framework.png",
+    "alt": "DeBoneDiT framework showing depth auto-encoder pretraining and conditional Brownian bridge diffusion for chest X-ray bone suppression.",
+    "authors": [
+      "Yifei Sun",
+      "Fenglei Fan",
+      "Junhao Jia",
+      "Wenming Deng",
+      "Hongxia Xu",
+      "Changmiao Wang",
+      "Ruiquan Ge"
+    ],
+    "equal_contribution": [
+      "Yifei Sun",
+      "Fenglei Fan"
+    ],
+    "corresponding_authors": [
+      "Changmiao Wang",
+      "Ruiquan Ge"
+    ],
+    "links": {
+      "Paper": "https://arxiv.org/abs/2610.19466"
+    },
+    "corresponding_author_source": "https://arxiv.org/pdf/2610.19466v1"
+  }
+]

@@ -1,6 +1,6 @@
 # Institution logo sources
 
-All seven selected logos have been visually inspected and are legible on white. No original colors or geometry were modified. SVG previews were rendered for inspection only. The selected SVGs are vector originals.
+The selected logos have been visually inspected and are legible on white. No original colors or geometry were modified. SVG previews were rendered for inspection only. The selected SVGs are vector originals.
 
 ## Tsinghua University
 - File: `tsinghua.svg`
@@ -51,3 +51,17 @@ All seven selected logos have been visually inspected and are legible on white. 
 - Asset source: https://github.com/user-attachments/assets/b105cced-5a82-4710-8570-0aaa7ffdb68e
 - Provenance: Exact emblem and bilingual wordmark used in the research-experience section of https://diaoquesang.github.io/, selected at the owner's request. Original image bytes and colors preserved.
 - Previous asset retained as `sribd.png`: official English homepage emblem from https://www.sribd.cn/sites/default/files/logo%2B_0.png (232 × 232).
+
+## Westlake Medical Artificial Intelligence Laboratory
+- File: `westlake-medai.png`
+- Dimensions: 304 × 96 (PNG)
+- Official homepage: https://medai.lab.westlake.edu.cn/index.htm
+- Asset source: https://medai.lab.westlake.edu.cn/img/icon_headerLogo_r.png
+- Provenance: Official laboratory header logo. Original image retained; displayed against the lab’s navy header color `#031633` for the white lettering.
+
+## Eagle Lab, Zhejiang University
+- File: `eagle-lab.png`
+- Dimensions: 1620 × 220 (PNG, served with a .jpg filename)
+- Official homepage: https://eagle.zju.edu.cn/
+- Asset source: https://eagle.zju.edu.cn/themes/stack/assets/temp/logo.jpg
+- Provenance: Official lab homepage header logo, original pixels and colors retained.

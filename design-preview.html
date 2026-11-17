@@ -11,7 +11,7 @@ show_software: true
 <div class="md-block"><p><span aria-hidden="true">📫</span> How to reach me: <a href="mailto:{{ profile.email }}">{{ profile.email }}</a>.</p></div>
 {% include academic/metrics.html %}
 {% include sidebar/entries.html id="education" icon="📖" title="Education" entries=profile.education %}
-{% include sidebar/entries.html id="research-experience" icon="💻" title="Experience" entries=profile.experience %}
+{% include sidebar/entries.html id="research-experience" icon="💻" title="Experience" entries=site.data.experience %}
 {% include sidebar/news.html %}
 {% include sidebar/publications.html %}
 {% include academic/honors.html sidebar=true %}

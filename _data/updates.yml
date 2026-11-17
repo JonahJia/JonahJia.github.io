@@ -75,5 +75,19 @@
     "url": "https://aaai.org/conference/aaai/aaai-26/",
     "label": "Accepted!",
     "kind": "accepted"
+  },
+  {
+    "date": "2025.10",
+    "venue": "BIBM 2025",
+    "url": "https://ieeebibm.org/BIBM2025/",
+    "label": "Oral Presentation!",
+    "kind": "oral"
+  },
+  {
+    "date": "2025.10",
+    "venue": "BIBM 2025",
+    "url": "https://ieeebibm.org/BIBM2025/",
+    "label": "Accepted!",
+    "kind": "accepted"
   }
 ]

@@ -202,5 +202,34 @@
       "Hongxia Xu"
     ],
     "corresponding_author_source": "https://diaoquesang.github.io/WDT-MD-Project-Page/"
+  },
+  {
+    "id": "rtgmff",
+    "title": "RTGMFF: Enhanced fMRI-based Brain Disorder Diagnosis via ROI-driven Text Generation and Multimodal Feature Fusion",
+    "venue": "BIBM 2025",
+    "conference": "IEEE International Conference on Bioinformatics and Biomedicine",
+    "year": 2025,
+    "featured": false,
+    "authors": [
+      "Junhao Jia",
+      "Yifei Sun",
+      "Yunyou Liu",
+      "Cheng Yang",
+      "Changmiao Wang",
+      "Feiwei Qin",
+      "Yong Peng",
+      "Wenwen Min"
+    ],
+    "badges": [
+      "Oral"
+    ],
+    "links": {
+      "Paper": "https://ieeexplore.ieee.org/abstract/document/11356807/"
+    },
+    "corresponding_authors": [
+      "Changmiao Wang",
+      "Feiwei Qin"
+    ],
+    "corresponding_author_source": "https://arxiv.org/html/2509.03214v2"
   }
 ]
