@@ -1,5 +1,7 @@
 pages:
   - name: Home
-    url: /
+    url: /#home
+    section: home
   - name: Publications
-    url: /publications.html
+    url: /#publications
+    section: publications

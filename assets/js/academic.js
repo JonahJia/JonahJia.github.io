@@ -1,4 +1,15 @@
 (() => {
+  const navigation = document.querySelectorAll('.nav-links a[data-section]');
+  const updateNavigation = () => {
+    const section = window.location.hash === '#publications' ? 'publications' : 'home';
+    navigation.forEach(link => {
+      if (link.dataset.section === section) link.setAttribute('aria-current', 'location');
+      else link.removeAttribute('aria-current');
+    });
+  };
+  updateNavigation();
+  window.addEventListener('hashchange', updateNavigation);
+
   const dialog = document.getElementById('figure-dialog');
   if (!dialog || typeof dialog.showModal !== 'function') return;
   const image = document.getElementById('figure-full');

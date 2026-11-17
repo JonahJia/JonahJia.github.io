@@ -14,11 +14,13 @@ Live site: https://jonahjia.github.io/
 | Author highlighting and personal homepage links | `_data/paper_authors.yml` |
 | Dated conference news | `_data/updates.yml` |
 | Navigation | `_data/navigation.yml` |
-| Home and publications pages | `index.html`, `publications.html` |
+| Homepage and legacy publications URL redirect | `index.html`, `publications.html` |
 | Reusable page sections | `_includes/academic/` |
 | Styling and framework image enlargement | `assets/css/academic.css`, `assets/js/academic.js` |
 
 The data files use JSON syntax, which is valid YAML and is read by Jekyll. Education and research experience precede news and publications. Three selected first-author papers use image cards; the other four publications use compact entries. Each framework image opens at a larger size. Full author lists are retained, with Junhao Jia highlighted in Tsinghua purple (`#660874`) and equal contributions marked with `*`.
+
+The site uses a single-page layout: Home jumps to the top, and Publications jumps to the homepage’s publications section. The old `/publications.html` URL redirects to `/#publications`. Publication resource buttons are currently hidden; their link metadata is retained for later use.
 
 Keep news entries in descending `YYYY.MM` order, link to the conference homepage, and put acceptance, oral selection and award selection in separate entries. Assets and source credits are in `assets/images/logos/` and `assets/images/publications/`. Older template data and widgets remain available but are not used by the new homepage.
 

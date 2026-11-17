@@ -14,11 +14,11 @@
   <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
   <script src="{{ '/assets/js/academic.js' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}" defer></script>
 </head>
-<body>
+<body id="home">
   <a class="skip-link" href="#main-content">Skip to content</a>
   <nav class="site-nav" aria-label="Main navigation"><div class="nav-inner">
-    <a class="site-name" href="{{ '/' | relative_url }}">Junhao Jia</a>
-    <div class="nav-links">{% for item in site.data.navigation.pages %}<a href="{{ item.url | relative_url }}"{% if item.name == page.navbar_title %} aria-current="page"{% endif %}>{{ item.name }}</a>{% endfor %}</div>
+    <a class="site-name" href="{{ '/#home' | relative_url }}">Junhao Jia</a>
+    <div class="nav-links">{% for item in site.data.navigation.pages %}<a href="{{ item.url | relative_url }}" data-section="{{ item.section }}"{% if item.name == page.navbar_title %} aria-current="location"{% endif %}>{{ item.name }}</a>{% endfor %}</div>
   </div></nav>
   <main id="main-content" class="site-container">{{ content }}</main>
   <footer class="site-footer"><span>Junhao Jia</span><span>Built with <a href="https://github.com/luost26/academic-homepage" target="_blank" rel="noopener noreferrer">academic-homepage</a> · <a href="https://github.com/JonahJia/JonahJia.github.io" target="_blank" rel="noopener noreferrer">Source</a></span></footer>
