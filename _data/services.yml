@@ -4,5 +4,5 @@
   { "name": "MICCAI", "url": "https://miccai.org/" },
   { "name": "ICASSP", "url": "https://ieeeicassp.org/" },
   { "name": "ICME", "url": "https://signalprocessingsociety.org/event-names/icme" },
-  { "name": "ICIC" }
+  { "name": "ICIC", "url": "http://www.ic-icc.cn/" }
 ]
