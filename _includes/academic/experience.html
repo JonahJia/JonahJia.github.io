@@ -1,0 +1,18 @@
+<section id="{{ include.id }}" class="academic-section" aria-labelledby="{{ include.id }}-heading">
+  <h2 class="section-heading" id="{{ include.id }}-heading"><span aria-hidden="true">{{ include.icon }}</span> {{ include.title }}</h2>
+  <div class="experience-list">
+    {% for entry in include.entries %}
+    <article class="surface experience-card">
+      <div class="institution-logos{% if entry.logos.size > 1 %} joint-logos{% endif %}">
+        {% for logo_key in entry.logos %}{% assign logo = site.data.institutions[logo_key] %}
+        <img src="{{ logo.image | relative_url }}" alt="{{ logo.name }} logo" loading="lazy">
+        {% endfor %}
+      </div>
+      <div class="experience-copy">
+        <div class="experience-meta"><h3 class="role-badge">{{ entry.role }}</h3>{% if entry.period %}<span class="period-badge">{{ entry.period }}</span>{% endif %}</div>
+        <p>{{ entry.description }}</p>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,171 @@
+[
+  {
+    "id": "scout",
+    "title": "SCOUT: Selective Coupling via Optimal Unbalanced Transport for Interpretable Text Classification",
+    "venue": "ACL 2026 Main",
+    "conference": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2026,
+    "featured": true,
+    "cover": "/assets/images/publications/scout-framework.png",
+    "alt": "SCOUT framework: span scoring, unbalanced optimal transport filtering, sparse coupling, and prototype-grounded explanations.",
+    "authors": [
+      "Junhao Jia",
+      "Hanwen Zheng",
+      "Yueyi Wu",
+      "Huangwei Chen",
+      "Haishuai Wang",
+      "Jiajun Bu",
+      "Lei Wu"
+    ],
+    "badges": [
+      "Oral",
+      "Award Candidate (Top 1%)"
+    ],
+    "links": {
+      "Paper": "https://aclanthology.org/2026.acl-long.290/"
+    }
+  },
+  {
+    "id": "amp",
+    "title": "This Looks Distinctly Like That: Grounding Interpretable Recognition in Stiefel Geometry Against Neural Collapse",
+    "venue": "ECCV 2026",
+    "conference": "European Conference on Computer Vision",
+    "year": 2026,
+    "featured": true,
+    "cover": "/assets/images/publications/amp-framework.png",
+    "alt": "Overview of the AMP framework for training and interpretable inference.",
+    "authors": [
+      "Junhao Jia",
+      "Jiaqi Wang",
+      "Yunyou Liu",
+      "Haodong Jing",
+      "Yueyi Wu",
+      "Xian Wu",
+      "Yefeng Zheng"
+    ],
+    "badges": [],
+    "links": {
+      "Paper": "https://link.springer.com/chapter/10.1007/978-3-032-37321-2_17",
+      "arXiv": "https://arxiv.org/abs/2603.08374"
+    }
+  },
+  {
+    "id": "geoproto",
+    "title": "Geodesic Prototype Matching via Diffusion Maps for Interpretable Fine-Grained Recognition",
+    "venue": "ICASSP 2026",
+    "conference": "IEEE International Conference on Acoustics, Speech and Signal Processing",
+    "year": 2026,
+    "featured": true,
+    "cover": "/assets/images/publications/geoproto-framework.png",
+    "alt": "GeoProto framework showing training with diffusion maps and interpretable inference through geodesic prototype matching.",
+    "authors": [
+      "Junhao Jia",
+      "Yunyou Liu",
+      "Yifei Sun",
+      "Huangwei Chen",
+      "Feiwei Qin",
+      "Changmiao Wang",
+      "Yong Peng"
+    ],
+    "badges": [
+      "Oral"
+    ],
+    "links": {
+      "Paper": "https://arxiv.org/abs/2509.17050"
+    }
+  },
+  {
+    "id": "dodr",
+    "title": "Directed Ordinal Diffusion Regularization for Progression-Aware Diabetic Retinopathy Grading",
+    "venue": "MICCAI 2026",
+    "conference": "International Conference on Medical Image Computing and Computer-Assisted Intervention",
+    "year": 2026,
+    "featured": false,
+    "authors": [
+      "Huangwei Chen",
+      "Junhao Jia",
+      "Ruocheng Li",
+      "Cunyuan Yang",
+      "Wu Li",
+      "Xiaotao Pang",
+      "Yifei Chen",
+      "Haishuai Wang",
+      "Jiajun Bu",
+      "Lei Wu"
+    ],
+    "equal_contribution": [
+      "Huangwei Chen",
+      "Junhao Jia"
+    ],
+    "links": {
+      "Paper": "https://papers.miccai.org/miccai-2026/0285-Paper1292.html",
+      "Code": "https://github.com/HovChen/D-ODR"
+    }
+  },
+  {
+    "id": "more-natural",
+    "title": "More Natural, More Real: Object-aware Gaussian Splatting for 3D Visual Decoding from Human Brain",
+    "venue": "CVPR 2026",
+    "conference": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+    "year": 2026,
+    "featured": false,
+    "authors": [
+      "Haodong Jing",
+      "Dongyao Jiang",
+      "Jixin Wang",
+      "Junhao Jia",
+      "Yanshu Li",
+      "Yongqiang Ma",
+      "Nanning Zheng"
+    ],
+    "links": {
+      "Paper": "https://openaccess.thecvf.com/content/CVPR2026/html/Jing_More_Natural_More_Real_Object-aware_Gaussian_Splatting_for_3D_Visual_CVPR_2026_paper.html"
+    }
+  },
+  {
+    "id": "beyond-individual",
+    "title": "Beyond the Individual: Virtualizing Multi-Disciplinary Reasoning for Clinical Intake via Collaborative Agents",
+    "venue": "Findings of ACL 2026",
+    "conference": "Findings of the Association for Computational Linguistics",
+    "year": 2026,
+    "featured": false,
+    "authors": [
+      "Huangwei Chen",
+      "Wu Li",
+      "Junhao Jia",
+      "Yining Chen",
+      "Xiaotao Pang",
+      "Ya-Long Chen",
+      "Li Gonghui",
+      "Haishuai Wang",
+      "Jiajun Bu",
+      "Lei Wu"
+    ],
+    "links": {
+      "Paper": "https://aclanthology.org/2026.findings-acl.789/",
+      "Code": "https://github.com/HovChen/Aegle"
+    }
+  },
+  {
+    "id": "wdt-md",
+    "title": "WDT-MD: Wavelet Diffusion Transformers for Microaneurysm Detection in Fundus Images",
+    "venue": "AAAI 2026",
+    "conference": "AAAI Conference on Artificial Intelligence",
+    "year": 2026,
+    "featured": false,
+    "authors": [
+      "Yifei Sun",
+      "Yuzhi He",
+      "Junhao Jia",
+      "Jinhong Wang",
+      "Ruiquan Ge",
+      "Changmiao Wang",
+      "Hongxia Xu"
+    ],
+    "links": {
+      "Paper": "https://ojs.aaai.org/index.php/AAAI/article/view/37882",
+      "Code": "https://github.com/diaoquesang/WDT-MD",
+      "Page": "https://diaoquesang.github.io/WDT-MD-Project-Page/"
+    }
+  }
+]

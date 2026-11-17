@@ -1,0 +1,104 @@
+{
+  "name": "Junhao Jia",
+  "email": "junhaojia530@gmail.com",
+  "portrait": "/assets/images/photos/github-avatar.png",
+  "scholar": "https://scholar.google.com/citations?user=xtnpJe4AAAAJ&hl=en",
+  "github": "https://github.com/JonahJia",
+  "bio": [
+    "I am an undergraduate student in Computer Science and Technology at Hangzhou Dianzi University, advised by <a href=\"https://scholar.google.com/citations?user=2Y06Jo4AAAAJ&amp;hl=en\" target=\"_blank\" rel=\"noopener noreferrer\">Feiwei Qin</a>, and an incoming PhD student at the College of AI, Tsinghua University, where I will be advised by <a href=\"https://lj2lijia.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Jia Li</a>.",
+    "My current research focuses on <strong>AI Safety</strong>. Previously, I worked on <strong>Natural Language Processing (NLP)</strong> and <strong>Explainable AI (XAI)</strong>.",
+    "I am currently an intern at Ant Group, mentored by <a href=\"https://xinhao-deng.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Xinhao Deng</a>."
+  ],
+  "education": [
+    {
+      "institution": "Tsinghua University",
+      "role": "Incoming PhD Student",
+      "logos": [
+        "tsinghua"
+      ],
+      "description": "Computer Science and Technology, College of AI, <a href=\"https://www.tsinghua.edu.cn/en/\" target=\"_blank\" rel=\"noopener noreferrer\">Tsinghua University</a>. To be advised by <a href=\"https://lj2lijia.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Jia Li</a>."
+    },
+    {
+      "institution": "Hangzhou Dianzi University",
+      "role": "Undergraduate Student",
+      "period": "2023.09 – 2027.06 (expected)",
+      "logos": [
+        "hdu"
+      ],
+      "description": "Computer Science and Technology, <a href=\"https://www.hdu.edu.cn/\" target=\"_blank\" rel=\"noopener noreferrer\">Hangzhou Dianzi University</a>. Advised by <a href=\"https://scholar.google.com/citations?user=2Y06Jo4AAAAJ&amp;hl=en\" target=\"_blank\" rel=\"noopener noreferrer\">Feiwei Qin</a>."
+    },
+    {
+      "institution": "University of Cambridge",
+      "role": "Summer Programme Participant",
+      "period": "2025.07 – 2025.09",
+      "logos": [
+        "cambridge"
+      ],
+      "description": "Deep Learning Summer Programme, <a href=\"https://www.cam.ac.uk/\" target=\"_blank\" rel=\"noopener noreferrer\">University of Cambridge</a>. Advised by <a href=\"https://www.cl.cam.ac.uk/~pl219/\" target=\"_blank\" rel=\"noopener noreferrer\">Pietro Liò</a>."
+    }
+  ],
+  "experience": [
+    {
+      "institution": "Ant Group",
+      "role": "Intern",
+      "period": "2026.11 – Present",
+      "logos": [
+        "ant"
+      ],
+      "description": "<a href=\"https://www.antgroup.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Ant Group</a>. Mentored by <a href=\"https://xinhao-deng.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Xinhao Deng</a>."
+    },
+    {
+      "institution": "Westlake University & Tencent Jarvis Lab",
+      "role": "Joint Research Intern",
+      "period": "2025.10 – 2026.05",
+      "logos": [
+        "westlake",
+        "tencent"
+      ],
+      "description": "<a href=\"https://en.westlake.edu.cn/\" target=\"_blank\" rel=\"noopener noreferrer\">Westlake University</a> &amp; <a href=\"https://jarvislab.tencent.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Tencent Jarvis Lab</a>. Advised by <a href=\"https://sites.google.com/site/yefengzheng\" target=\"_blank\" rel=\"noopener noreferrer\">Yefeng Zheng</a> at Westlake University and mentored by <a href=\"https://github.com/JackeyWang96\" target=\"_blank\" rel=\"noopener noreferrer\">Jiaqi Wang</a> at Tencent."
+    },
+    {
+      "institution": "Shenzhen Research Institute of Big Data",
+      "role": "Research Intern",
+      "period": "2024.06 – 2025.09",
+      "logos": [
+        "sribd"
+      ],
+      "description": "<a href=\"https://www.sribd.cn/\" target=\"_blank\" rel=\"noopener noreferrer\">Shenzhen Research Institute of Big Data</a>. Advised by <a href=\"https://jiandanjinxin.github.io/changmiaowang/\" target=\"_blank\" rel=\"noopener noreferrer\">Changmiao Wang</a>."
+    }
+  ],
+  "awards": [
+    {
+      "year": "2025, 2026",
+      "name": "Meritorious Winner, MCM/ICM"
+    },
+    {
+      "year": "2025, 2026",
+      "name": "“Tailong Star” Scholarship"
+    },
+    {
+      "year": "2025",
+      "name": "National Gold Medal, China International College Students’ Innovation Competition"
+    },
+    {
+      "year": "2025",
+      "name": "National First Prize, Lanqiao Cup"
+    },
+    {
+      "year": "2025",
+      "name": "“Qiuxin Star” Award, Hangzhou Dianzi University"
+    },
+    {
+      "year": "2024",
+      "name": "National Scholarship"
+    }
+  ],
+  "service": [
+    "ACM MM",
+    "EMNLP",
+    "MICCAI",
+    "ICASSP",
+    "ICME",
+    "ICIC"
+  ]
+}

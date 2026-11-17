@@ -1,0 +1,35 @@
+<section id="publications" class="academic-section" aria-labelledby="publications-heading">
+  <h2 class="section-heading" id="publications-heading"><span aria-hidden="true">📝</span> {% if include.dedicated %}Conference Papers{% else %}Selected Publications{% endif %}</h2>
+  <div class="featured-papers">
+    {% for paper in site.data.papers %}{% if paper.featured %}
+    <article class="surface paper-card" id="paper-{{ paper.id }}">
+      <div class="paper-visual">
+        <span class="venue-badge">{{ paper.venue }}</span>
+        <a href="{{ paper.cover | relative_url }}" class="figure-trigger" data-figure-caption="{{ paper.title | escape }}" aria-label="Enlarge framework diagram for {{ paper.title | escape }}">
+          <img src="{{ paper.cover | relative_url }}" alt="{{ paper.alt | escape }}" loading="lazy">
+          <span class="figure-zoom">View framework <span aria-hidden="true">↗</span></span>
+        </a>
+      </div>
+      <div class="paper-copy">
+        <h3><a href="{{ paper.links.Paper }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a></h3>
+        {% include academic/authors.html paper=paper %}
+        <p class="conference-name">{{ paper.conference }}</p>
+        {% if paper.badges.size > 0 %}<div class="paper-distinctions">{% for badge in paper.badges %}<span{% if badge contains 'Award' %} class="award-badge"{% endif %}>{{ badge }}</span>{% endfor %}</div>{% endif %}
+        {% include academic/paper_links.html paper=paper %}
+      </div>
+    </article>
+    {% endif %}{% endfor %}
+  </div>
+  <div class="surface other-papers">
+    {% for paper in site.data.papers %}{% unless paper.featured %}
+    <article class="compact-paper" id="paper-{{ paper.id }}">
+      <span class="compact-venue">{{ paper.venue }}</span>
+      <h3><a href="{{ paper.links.Paper }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a></h3>
+      {% include academic/authors.html paper=paper %}
+      <p class="conference-name">{{ paper.conference }}</p>
+      {% if paper.equal_contribution %}<p class="contribution-note">* Equal contribution.</p>{% endif %}
+      {% include academic/paper_links.html paper=paper %}
+    </article>
+    {% endunless %}{% endfor %}
+  </div>
+</section>

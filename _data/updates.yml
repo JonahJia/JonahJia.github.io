@@ -1,0 +1,79 @@
+[
+  {
+    "date": "2026.09",
+    "venue": "NeurIPS 2026",
+    "url": "https://neurips.cc/Conferences/2026",
+    "label": "Accepted!",
+    "kind": "accepted"
+  },
+  {
+    "date": "2026.06",
+    "venue": "ECCV 2026",
+    "url": "https://eccv.ecva.net/",
+    "label": "Accepted!",
+    "kind": "accepted"
+  },
+  {
+    "date": "2026.06",
+    "venue": "MICCAI 2026",
+    "url": "https://www.miccai2026.org/en/default.asp",
+    "label": "Accepted!",
+    "kind": "accepted"
+  },
+  {
+    "date": "2026.04",
+    "venue": "ACL 2026",
+    "url": "https://2026.aclweb.org/",
+    "label": "Award Candidate (Top 1%)!",
+    "kind": "award"
+  },
+  {
+    "date": "2026.04",
+    "venue": "ACL 2026",
+    "url": "https://2026.aclweb.org/",
+    "label": "Oral Presentation!",
+    "kind": "oral"
+  },
+  {
+    "date": "2026.04",
+    "venue": "ACL 2026 Main",
+    "url": "https://2026.aclweb.org/",
+    "label": "Accepted!",
+    "kind": "accepted"
+  },
+  {
+    "date": "2026.04",
+    "venue": "Findings of ACL 2026",
+    "url": "https://2026.aclweb.org/",
+    "label": "Accepted!",
+    "kind": "accepted"
+  },
+  {
+    "date": "2026.03",
+    "venue": "ICASSP 2026",
+    "url": "https://2026.ieeeicassp.org/",
+    "label": "Oral Presentation!",
+    "kind": "oral"
+  },
+  {
+    "date": "2026.02",
+    "venue": "CVPR 2026",
+    "url": "https://cvpr.thecvf.com/Conferences/2026",
+    "label": "Accepted!",
+    "kind": "accepted"
+  },
+  {
+    "date": "2026.01",
+    "venue": "ICASSP 2026",
+    "url": "https://2026.ieeeicassp.org/",
+    "label": "Accepted!",
+    "kind": "accepted"
+  },
+  {
+    "date": "2025.11",
+    "venue": "AAAI 2026",
+    "url": "https://aaai.org/conference/aaai/aaai-26/",
+    "label": "Accepted!",
+    "kind": "accepted"
+  }
+]

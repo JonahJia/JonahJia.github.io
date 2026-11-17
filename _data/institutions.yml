@@ -1,0 +1,30 @@
+{
+  "tsinghua": {
+    "name": "Tsinghua University",
+    "image": "/assets/images/logos/tsinghua.svg"
+  },
+  "hdu": {
+    "name": "Hangzhou Dianzi University",
+    "image": "/assets/images/logos/hdu.svg"
+  },
+  "cambridge": {
+    "name": "University of Cambridge",
+    "image": "/assets/images/logos/cambridge.svg"
+  },
+  "ant": {
+    "name": "Ant Group",
+    "image": "/assets/images/logos/antgroup.png"
+  },
+  "westlake": {
+    "name": "Westlake University",
+    "image": "/assets/images/logos/westlake.png"
+  },
+  "tencent": {
+    "name": "Tencent",
+    "image": "/assets/images/logos/tencent.png"
+  },
+  "sribd": {
+    "name": "Shenzhen Research Institute of Big Data",
+    "image": "/assets/images/logos/sribd.png"
+  }
+}

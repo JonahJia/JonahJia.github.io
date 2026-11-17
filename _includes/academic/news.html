@@ -1,0 +1,12 @@
+<section id="news" class="academic-section" aria-labelledby="news-heading">
+  <h2 class="section-heading" id="news-heading"><span aria-hidden="true">🔥</span> News</h2>
+  <div class="surface news-list" tabindex="0" role="region" aria-label="News, scroll for earlier updates">
+    {% for item in site.data.updates %}
+    <div class="news-row">
+      <time datetime="{{ item.date | replace: '.', '-' }}">{{ item.date }}:</time>
+      <p><span aria-hidden="true">🎉🎉</span> Our paper for <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.venue }}</a> {% if item.kind == 'award' %}was selected as an{% elsif item.kind == 'oral' %}was selected for{% else %}was{% endif %} <strong>{{ item.label }}</strong></p>
+    </div>
+    {% endfor %}
+  </div>
+  <p class="scroll-hint">Scroll for earlier updates <span aria-hidden="true">↓</span></p>
+</section>

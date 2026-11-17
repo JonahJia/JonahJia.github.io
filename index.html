@@ -1,39 +1,48 @@
 ---
 layout: default
-title : Home
+title: Home
 navbar_title: Home
 ---
-
-<div class="row">
-    <div class="col-lg-3 col-md-4">
-        {% include widgets/profile_card_mini.html %}
+{% assign profile = site.data.homepage %}
+<header class="profile-intro">
+  <img class="profile-avatar" src="{{ profile.portrait | relative_url }}" alt="Junhao Jia's GitHub avatar" width="160" height="160">
+  <div class="profile-info">
+    <h1>{{ profile.name }}</h1>
+    <p class="profile-position">Incoming PhD Student, College of AI, Tsinghua University</p>
+    <p class="profile-position secondary">Undergraduate Student, Hangzhou Dianzi University</p>
+    <div class="profile-contact">
+      <a href="mailto:{{ profile.email }}"><span aria-hidden="true">✉</span> {{ profile.email }}</a>
+      <a href="{{ profile.scholar }}" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+      <a href="{{ profile.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
     </div>
-    <div class="col-lg-9 col-md-8">
-
-        {% include widgets/profile_card_bio_only.html %}
-
-        {% if site.data.display.homepage.show_experience %}
-            {% include widgets/experience_card.html %}
-        {% endif %}
-
-        {% if site.data.display.homepage.show_news %}
-        {% assign count_news = site.news | size %}
-        {% if count_news > 0 %}
-        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
-        {% endif %}
-        {% endif %}
-
-        {% if site.data.display.homepage.show_selected_publications %}
-        {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
-        {% if pubs.size > 0 %}
-        {%
-        include widgets/publication_card.html
-        publications=pubs
-        title='<i class="fas fa-star"></i> Selected Publications'
-        %}
-        {% else %}
-        {% include widgets/scholar_card.html %}
-        {% endif %}
-        {% endif %}
+  </div>
+</header>
+<section id="about" class="about-section" aria-labelledby="about-heading">
+  <h2 id="about-heading" class="about-heading">About Me</h2>
+  {% for paragraph in profile.bio %}<p>{{ paragraph }}</p>{% endfor %}
+</section>
+{% include academic/experience.html id="education" icon="📖" title="Education" entries=profile.education %}
+{% include academic/experience.html id="research-experience" icon="💻" title="Research Experience" entries=profile.experience %}
+{% include academic/news.html %}
+{% include academic/publications.html %}
+<section id="honors" class="academic-section" aria-labelledby="honors-heading">
+  <h2 class="section-heading" id="honors-heading"><span aria-hidden="true">🏅</span> Selected Honors &amp; Awards</h2>
+  <div class="surface honors-list">
+    {% for award in profile.awards %}<div class="honor-row"><span class="honor-year">{{ award.year }}</span><span>{{ award.name }}</span></div>{% endfor %}
+  </div>
+</section>
+<section id="open-source" class="academic-section" aria-labelledby="opensource-heading">
+  <h2 class="section-heading" id="opensource-heading"><span aria-hidden="true">🛠️</span> Open Source</h2>
+  <div class="surface open-source-card">
+    <h3><a href="https://github.com/BeistMedAI/Paper-List-for-Prototypical-Learning" target="_blank" rel="noopener noreferrer">Paper List for Prototypical Learning</a></h3>
+    <p>A curated collection of papers on prototypical learning and interpretable AI.</p>
+    <div class="repository-badges">
+      <a href="https://github.com/BeistMedAI/Paper-List-for-Prototypical-Learning/stargazers" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/stars/BeistMedAI/Paper-List-for-Prototypical-Learning?style=flat-square&amp;label=Stars&amp;color=660874" alt="GitHub stars" loading="lazy" height="20"></a>
+      <a href="https://github.com/BeistMedAI/Paper-List-for-Prototypical-Learning/forks" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/forks/BeistMedAI/Paper-List-for-Prototypical-Learning?style=flat-square&amp;label=Forks&amp;color=526078" alt="GitHub forks" loading="lazy" height="20"></a>
     </div>
-</div>
+  </div>
+</section>
+<section id="service" class="academic-section" aria-labelledby="service-heading">
+  <h2 class="section-heading" id="service-heading"><span aria-hidden="true">🤝</span> Academic Service</h2>
+  <div class="surface service-card"><strong>Reviewer:</strong> {{ profile.service | join: ", " }}.</div>
+</section>

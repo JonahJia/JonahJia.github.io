@@ -1,5 +1,5 @@
 title: "Junhao Jia"
-description: "Junhao Jia’s academic homepage. Publications and academic profiles."
+description: "Junhao Jia — AI Safety researcher, incoming PhD student at Tsinghua University, and undergraduate at Hangzhou Dianzi University."
 url: "https://jonahjia.github.io"
 baseurl: ""
 lang: en
@@ -23,3 +23,4 @@ exclude:
   - preview
   - package.json
   - package-lock.json
+  - homepage-content-notes.md

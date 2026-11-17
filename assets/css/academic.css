@@ -1,0 +1,175 @@
+:root {
+  --ink: #272d37;
+  --muted: #697386;
+  --blue: #2861d9;
+  --blue-soft: #edf2ff;
+  --purple: #660874;
+  --line: #e2e6ed;
+  --page: #f5f6f9;
+  --shadow: 0 2px 4px rgba(32, 45, 67, .04), 0 7px 24px rgba(32, 45, 67, .035);
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 90px; }
+body { margin: 0; background: var(--page); color: var(--ink); font: 17px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
+a { color: var(--blue); text-decoration: none; }
+a:hover { color: #1749b0; text-decoration: underline; text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 3px solid #8b59a2; outline-offset: 4px; }
+button { font: inherit; }
+img { max-width: 100%; }
+h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3 { line-height: 1.3; }
+.site-nav { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,.96); border-bottom: 1px solid var(--line); backdrop-filter: blur(12px); }
+.nav-inner { max-width: 1160px; margin: auto; padding: 17px 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.site-name { font-weight: 700; font-size: 19px; color: var(--ink); letter-spacing: -.4px; }
+.nav-links { display: flex; gap: 28px; font-size: 15px; }
+.nav-links a { color: var(--muted); }
+.nav-links a[aria-current="page"] { color: var(--blue); font-weight: 650; }
+.site-container { max-width: 1160px; margin: 0 auto; padding: 44px 28px 16px; }
+.profile-intro { display: grid; grid-template-columns: 160px minmax(0,1fr); gap: 38px; align-items: center; margin: 0 0 30px; }
+.profile-avatar { display: block; width: 160px; height: 160px; border-radius: 22px; border: 4px solid white; box-shadow: var(--shadow); object-fit: cover; }
+.profile-info h1 { font-size: clamp(32px,4vw,42px); letter-spacing: -1.2px; margin-bottom: 10px; font-weight: 750; }
+.profile-position { margin: 0 0 3px; font-size: 17px; }
+.profile-position.secondary { color: var(--muted); font-size: 16px; }
+.profile-contact { display: flex; align-items: center; flex-wrap: wrap; gap: 7px 22px; margin-top: 15px; font-size: 15px; }
+.about-section { margin-bottom: 43px; }
+.about-heading { font-size: 23px; margin-bottom: 15px; }
+.about-section p { margin-bottom: 12px; }
+.about-section p:last-child { margin-bottom: 0; }
+.academic-section { margin-top: 42px; }
+.section-heading { display: flex; gap: 13px; align-items: center; margin: 0 0 22px; font-size: clamp(23px,3vw,29px); letter-spacing: -.6px; font-weight: 720; }
+.section-heading > span { flex: 0 0 auto; font-size: 30px; line-height: 1; }
+.section-heading::after { content: ""; height: 2px; flex: 1 1 auto; min-width: 20px; margin-left: 5px; background: linear-gradient(90deg, #5a84ea, rgba(90,132,234,0)); }
+.surface { background: white; border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow); }
+.experience-list { display: grid; gap: 17px; }
+.experience-card { padding: 26px 30px; display: grid; grid-template-columns: 180px minmax(0,1fr); align-items: center; gap: 30px; }
+.institution-logos { display: flex; align-items: center; justify-content: center; width: 180px; min-height: 100px; padding: 14px; border: 1px solid #e9ebef; border-radius: 13px; background: white; }
+.institution-logos img { display: block; width: auto; max-width: 100%; max-height: 72px; object-fit: contain; }
+.joint-logos { flex-direction: column; gap: 12px; padding: 12px 18px; }
+.joint-logos img { max-height: 43px; }
+.experience-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin-bottom: 13px; }
+.role-badge { display: inline-block; margin: 0; padding: 5px 13px; border-radius: 100px; background: var(--blue-soft); color: var(--blue); font-size: 16px; font-weight: 650; line-height: 1.5; }
+.period-badge { display: inline-block; padding: 4px 12px; border-radius: 100px; font-size: 15px; font-style: italic; line-height: 1.6; color: var(--muted); background: #f0f2f6; }
+.experience-copy p { margin: 0; font-size: 17px; line-height: 1.8; }
+.news-list { max-height: 394px; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: #d5dce8 transparent; padding: 14px; }
+.news-row { display: grid; grid-template-columns: 98px minmax(0,1fr); gap: 14px; padding: 12px 15px; align-items: baseline; border-radius: 11px; }
+.news-row:nth-child(even) { background: #f0f2f7; }
+.news-row time { font-size: 16px; font-style: italic; color: var(--muted); white-space: nowrap; }
+.news-row p { margin: 0; font-size: 16px; line-height: 1.75; }
+.news-row p > span { margin-right: 5px; }
+.scroll-hint { color: var(--muted); font-size: 12px; margin: 5px 12px 0; text-align: right; }
+.featured-papers { display: grid; gap: 20px; }
+.paper-card { display: grid; grid-template-columns: minmax(0,31%) minmax(0,1fr); gap: 28px; padding: 26px; align-items: start; }
+.paper-visual { min-width: 0; }
+.venue-badge { display: inline-block; border-radius: 100px; padding: 4px 12px; font-size: 14px; font-weight: 650; color: #f6f7ff; background: #424d66; border: 1px solid #7786a6; margin-bottom: 14px; }
+.figure-trigger { display: block; position: relative; padding: 4px 0 0; cursor: zoom-in; border-radius: 6px; }
+.figure-trigger img { width: 100%; display: block; height: auto; object-fit: contain; border-radius: 4px; }
+.figure-zoom { display: block; font-size: 11px; color: var(--muted); margin: 7px 0 0; text-align: right; }
+.paper-copy h3, .compact-paper h3 { font-size: 20px; line-height: 1.5; font-weight: 700; margin: 0 0 13px; }
+.paper-copy h3 a { color: var(--ink); }
+.paper-copy h3 a:hover { color: var(--blue); }
+.paper-authors { font-size: 15px; line-height: 1.9; margin: 0 0 10px; }
+.paper-authors a { color: inherit; text-decoration: underline; text-decoration-color: #c7ced9; text-underline-offset: 3px; }
+.paper-authors a:hover { color: var(--blue); text-decoration-color: currentColor; }
+.author-self { font-weight: 750; color: var(--purple); }
+.equal-mark { font-size: .78em; line-height: 0; vertical-align: super; margin-left: 1px; }
+.conference-name { font-style: italic; color: var(--muted); font-size: 14px; line-height: 1.6; margin: 0 0 12px; }
+.paper-distinctions { display: flex; flex-wrap: wrap; gap: 7px; margin: 0 0 12px; }
+.paper-distinctions span { padding: 2px 9px; border-radius: 5px; font-size: 12px; font-weight: 650; background: #edf2ff; color: #2858bc; }
+.paper-distinctions .award-badge { color: #8a5b05; background: #fff4d8; }
+.paper-links { display: flex; flex-wrap: wrap; gap: 8px; font-size: 13px; }
+.paper-links a { display: inline-flex; gap: 8px; align-items: center; border: 1px solid #dbe3f1; padding: 2px 9px; border-radius: 5px; }
+.paper-links a:hover { text-decoration: none; background: var(--blue-soft); }
+.paper-links span { font-size: 12px; }
+.other-papers { padding: 12px; margin-top: 20px; }
+.compact-paper { padding: 19px 19px 20px; border-radius: 11px; }
+.compact-paper:nth-child(even) { background: #f0f2f7; }
+.compact-venue { display: inline-block; font-size: 13px; font-weight: 650; padding: 2px 9px; background: #eaf0ff; color: var(--blue); border-radius: 6px; margin-bottom: 9px; }
+.compact-paper h3 { font-size: 18px; margin-bottom: 9px; }
+.compact-paper .paper-authors { margin-bottom: 5px; }
+.compact-paper .conference-name { margin-bottom: 6px; }
+.contribution-note { font-size: 12px; color: var(--muted); margin: 0 0 9px; }
+.honors-list { padding: 15px 25px; }
+.honor-row { display: grid; grid-template-columns: 100px minmax(0,1fr); gap: 22px; padding: 12px 0; font-size: 16px; }
+.honor-row + .honor-row { border-top: 1px solid #edf0f5; }
+.honor-year { color: var(--muted); font-size: 14px; padding-top: 2px; }
+.open-source-card { padding: 25px 30px; }
+.open-source-card h3 { font-size: 20px; margin-bottom: 10px; }
+.open-source-card p { font-size: 16px; margin-bottom: 13px; }
+.repository-badges { display: flex; gap: 8px; min-height: 20px; }
+.repository-badges img { display: block; height: 20px; }
+.service-card { padding: 23px 30px; font-size: 16px; }
+.site-footer { max-width: 1104px; margin: 38px auto 0; padding: 24px 0 28px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; font-size: 12px; color: var(--muted); }
+.site-footer a { color: var(--muted); }
+.page-intro { margin: 5px 0 35px; }
+.page-intro h1 { font-size: 37px; letter-spacing: -.8px; margin-bottom: 14px; }
+.page-intro p { color: var(--muted); max-width: 750px; }
+.page-intro + .academic-section { margin-top: 0; }
+.skip-link { position: fixed; left: 12px; top: -70px; padding: 9px 15px; background: white; z-index: 100; border-radius: 5px; }
+.skip-link:focus { top: 10px; }
+.figure-dialog { border: 0; padding: 46px 22px 18px; border-radius: 13px; background: white; max-width: min(1400px,94vw); max-height: 94vh; overflow: auto; box-shadow: 0 20px 80px #0005; }
+.figure-dialog::backdrop { background: rgba(21,27,40,.8); }
+.figure-dialog img { display: block; max-width: 100%; max-height: 76vh; margin: auto; object-fit: contain; }
+.figure-dialog p { font-size: 13px; line-height: 1.5; text-align: center; margin: 14px 0 0; max-width: 1000px; }
+.dialog-close { position: absolute; right: 10px; top: 5px; background: #f1f3f7; border: none; border-radius: 50%; height: 34px; width: 34px; line-height: 30px; color: #26324a; font-size: 27px; cursor: pointer; }
+@media (max-width: 900px) {
+  .experience-card { grid-template-columns: 155px minmax(0,1fr); padding: 22px; gap: 23px; }
+  .institution-logos { width: 155px; min-height: 90px; }
+  .experience-copy p { font-size: 16px; }
+  .paper-card { grid-template-columns: minmax(0,30%) minmax(0,1fr); gap: 22px; padding: 22px; }
+  .paper-copy h3 { font-size: 18px; }
+  .site-footer { margin-left: 28px; margin-right: 28px; }
+}
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .nav-inner { padding: 14px 20px; }
+  .site-name { font-size: 17px; }
+  .nav-links { gap: 18px; font-size: 14px; }
+  .site-container { padding: 27px 17px 10px; }
+  .profile-intro { grid-template-columns: 92px minmax(0,1fr); gap: 18px; align-items: start; margin-bottom: 25px; }
+  .profile-avatar { width: 92px; height: 92px; border-radius: 16px; border-width: 3px; }
+  .profile-info h1 { font-size: 30px; margin: 0 0 8px; letter-spacing: -.7px; }
+  .profile-position, .profile-position.secondary { font-size: 13px; line-height: 1.65; }
+  .profile-contact { gap: 7px 15px; margin-top: 11px; font-size: 13px; }
+  .profile-contact a:first-child { flex-basis: 100%; overflow-wrap: anywhere; }
+  .about-heading { font-size: 21px; }
+  .about-section { margin-bottom: 32px; }
+  .academic-section { margin-top: 33px; }
+  .section-heading { font-size: 24px; gap: 9px; margin-bottom: 17px; letter-spacing: -.6px; }
+  .section-heading > span { font-size: 25px; }
+  .surface { border-radius: 14px; }
+  .experience-card { grid-template-columns: 1fr; gap: 17px; padding: 20px; }
+  .institution-logos { width: 175px; min-height: 76px; height: 76px; padding: 10px 15px; }
+  .institution-logos img { max-height: 53px; }
+  .joint-logos { flex-direction: row; width: 100%; gap: 20px; justify-content: flex-start; }
+  .joint-logos img { width: calc(50% - 10px); max-height: 43px; }
+  .experience-meta { gap: 8px; margin-bottom: 10px; }
+  .role-badge { font-size: 14px; padding: 4px 11px; }
+  .period-badge { font-size: 13px; }
+  .experience-copy p { font-size: 15px; }
+  .news-list { padding: 8px; max-height: 375px; }
+  .news-row { grid-template-columns: 1fr; gap: 2px; padding: 11px 12px; }
+  .news-row time { font-size: 13px; }
+  .news-row p { font-size: 15px; line-height: 1.7; }
+  .paper-card { grid-template-columns: 1fr; padding: 20px; gap: 18px; }
+  .paper-visual { max-width: 100%; }
+  .figure-trigger img { max-height: 260px; }
+  .venue-badge { margin-bottom: 10px; font-size: 13px; }
+  .paper-copy h3 { font-size: 18px; }
+  .paper-authors { font-size: 14px; }
+  .conference-name { font-size: 13px; }
+  .compact-paper { padding: 16px 12px; }
+  .compact-paper h3 { font-size: 17px; }
+  .other-papers { padding: 8px; }
+  .honors-list { padding: 9px 18px; }
+  .honor-row { grid-template-columns: 1fr; gap: 2px; padding: 12px 0; font-size: 15px; }
+  .honor-year { font-size: 12px; }
+  .open-source-card, .service-card { padding: 20px; font-size: 15px; }
+  .open-source-card h3 { font-size: 18px; }
+  .open-source-card p { font-size: 15px; }
+  .site-footer { margin: 29px 17px 0; font-size: 11px; padding: 20px 0; }
+  .page-intro h1 { font-size: 30px; }
+  .figure-dialog { padding: 45px 10px 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; }
+}
