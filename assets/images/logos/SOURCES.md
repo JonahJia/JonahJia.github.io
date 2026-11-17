@@ -45,8 +45,9 @@ All seven selected logos have been visually inspected and are legible on white. 
 - Provenance: Official Tencent homepage header; blue English wordmark. Tencent parent brand; no invented Jarvis branding.
 
 ## Shenzhen Research Institute of Big Data
-- File: `sribd.png`
-- Dimensions: 232 × 232 (PNG)
+- File: `sribd-reference.png`
+- Dimensions: 326 × 60 (PNG)
 - Official homepage: https://www.sribd.cn/en
-- Asset source: https://www.sribd.cn/sites/default/files/logo%2B_0.png
-- Provenance: Official English homepage header; purple and gold emblem.
+- Asset source: https://github.com/user-attachments/assets/b105cced-5a82-4710-8570-0aaa7ffdb68e
+- Provenance: Exact emblem and bilingual wordmark used in the research-experience section of https://diaoquesang.github.io/, selected at the owner's request. Original image bytes and colors preserved.
+- Previous asset retained as `sribd.png`: official English homepage emblem from https://www.sribd.cn/sites/default/files/logo%2B_0.png (232 × 232).
