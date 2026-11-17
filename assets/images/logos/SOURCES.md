@@ -59,7 +59,7 @@ The selected logos have been visually inspected and are legible on white. No ori
 - Asset source: https://medai.lab.westlake.edu.cn/img/icon_headerLogo_r.png
 - Provenance: Official laboratory header logo. Original image retained; displayed against the lab’s navy header color `#031633` for the white lettering.
 
-## Eagle Lab, Zhejiang University
+## EAGLE-Lab, Zhejiang University
 - File: `eagle-lab.png`
 - Dimensions: 1620 × 220 (PNG, served with a .jpg filename)
 - Official homepage: https://eagle.zju.edu.cn/
