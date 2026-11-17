@@ -2,7 +2,6 @@
 layout: default
 title: Home
 navbar_title: Home
-show_additional_sections: false
 ---
 {% assign profile = site.data.homepage %}
 <header class="profile-intro">
@@ -30,14 +29,8 @@ show_additional_sections: false
 {% include academic/publications.html %}
 {% include academic/honors.html %}
 {% include academic/funding.html %}
+{% include academic/services.html %}
 {% include academic/patents.html %}
 {% include academic/software.html %}
 {% include academic/competitions.html %}
 {% include academic/open_source.html %}
-{% if page.show_additional_sections %}
-
-<section id="service" class="academic-section" aria-labelledby="service-heading">
-  <h2 class="section-heading" id="service-heading"><span aria-hidden="true">🤝</span> Academic Service</h2>
-  <div class="surface service-card"><strong>Reviewer:</strong> {{ profile.service | join: ", " }}.</div>
-</section>
-{% endif %}

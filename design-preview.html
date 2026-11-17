@@ -3,7 +3,6 @@ layout: sidebar
 title: Home
 permalink: /preview/
 preview: true
-show_additional_sections: false
 show_software: true
 ---
 {% assign profile=site.data.homepage %}
@@ -17,11 +16,7 @@ show_software: true
 {% include sidebar/publications.html %}
 {% include academic/honors.html sidebar=true %}
 {% include academic/funding.html sidebar=true %}
-{% if page.show_additional_sections %}
-<h1 class="section-title" id="services">🔖 Services</h1>
-<h2 class="sub-title">Conference Reviewer</h2>
-<div class="jnl-row">{% for venue in profile.service %}<span class="jnl-chip">{{ venue }}</span>{% endfor %}</div>
-{% endif %}
+{% include academic/services.html sidebar=true %}
 {% include academic/patents.html sidebar=true %}
 {% include sidebar/software.html %}
 {% include academic/competitions.html sidebar=true %}

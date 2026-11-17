@@ -30,7 +30,7 @@
         {% for item in site.data.sidebar_navigation %}<li><a class="nav-link" href="#{{ item.anchor }}">{{ item.name }}</a></li>{% endfor %}
         {% if site.data.honors.scholarships.size > 0 or site.data.honors.distinctions.size > 0 %}<li><a class="nav-link" href="#honors">Honors</a></li>{% endif %}
         {% if site.data.funding.size > 0 %}<li><a class="nav-link" href="#funding">Funding</a></li>{% endif %}
-        {% if page.show_additional_sections %}<li><a class="nav-link" href="#services">Services</a></li>{% endif %}
+        {% if site.data.services.size > 0 %}<li><a class="nav-link" href="#services">Services</a></li>{% endif %}
         {% if site.data.patents.size > 0 %}<li><a class="nav-link" href="#patents">Patents</a></li>{% endif %}
         {% if page.show_software and site.data.software.size > 0 %}<li><a class="nav-link" href="#software">Software</a></li>{% endif %}
         {% if site.data.competitions.international_national.size > 0 or site.data.competitions.regional_provincial.size > 0 %}<li><a class="nav-link" href="#competitions">Competitions</a></li>{% endif %}

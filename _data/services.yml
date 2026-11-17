@@ -1,0 +1,8 @@
+[
+  { "name": "ACM MM", "url": "https://acmmm.org/" },
+  { "name": "EMNLP", "url": "https://emnlp.org/" },
+  { "name": "MICCAI", "url": "https://miccai.org/" },
+  { "name": "ICASSP", "url": "https://ieeeicassp.org/" },
+  { "name": "ICME", "url": "https://signalprocessingsociety.org/event-names/icme" },
+  { "name": "ICIC" }
+]

@@ -1,0 +1,7 @@
+{% if site.data.services.size > 0 %}
+{% if include.sidebar %}<h1 class="section-title" id="services">🔖 Services</h1>{% else %}<section id="services" class="academic-section" aria-labelledby="services-heading"><h2 class="section-heading" id="services-heading"><span aria-hidden="true">🔖</span> Services</h2>{% endif %}
+<div class="{% if include.sidebar %}jnl-row{% else %}surface service-card{% endif %}"><strong style="align-self: center">Reviewer:</strong>
+{% for venue in site.data.services %}{% if venue.url %}<a{% if include.sidebar %} class="jnl-chip"{% endif %} href="{{ venue.url }}" target="_blank" rel="noopener noreferrer">{{ venue.name }}</a>{% else %}<span{% if include.sidebar %} class="jnl-chip"{% endif %}>{{ venue.name }}</span>{% endif %}{% unless include.sidebar or forloop.last %}, {% endunless %}{% endfor %}
+</div>
+{% unless include.sidebar %}</section>{% endunless %}
+{% endif %}
