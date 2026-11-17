@@ -12,7 +12,7 @@
     },
     {
       "year": "2025",
-      "name": "Outstanding Trainee, Qingma Training Program"
+      "name": "HDU Outstanding Trainee, Qingma Training Program"
     },
     {
       "year": "2025",
@@ -36,7 +36,8 @@
     },
     {
       "year": "2024",
-      "name": "HDU-CS Person of the Year"
+      "name": "HDU-CS Person of the Year",
+      "note": "One of only two sophomore recipients"
     }
   ],
   "scholarships": [
@@ -44,6 +45,16 @@
       "year": "2026",
       "name": "Zhejiang Provincial Government Scholarship",
       "amount": "5,000.00"
+    },
+    {
+      "name": "HDU First-Class Scholarship",
+      "amount": "1,500.00",
+      "year": "2026"
+    },
+    {
+      "name": "HDU First-Class Scholarship",
+      "amount": "1,500.00",
+      "year": "2026"
     },
     {
       "year": "2025",
@@ -54,7 +65,17 @@
       "year": "2025",
       "name": "HDU “Tailong Star” Scholarship",
       "amount": "3,000.00",
-      "note": "Only student at HDU to receive this scholarship in two consecutive years"
+      "note": "HDU's only back-to-back recipient"
+    },
+    {
+      "name": "HDU First-Class Scholarship",
+      "amount": "1,500.00",
+      "year": "2025"
+    },
+    {
+      "name": "HDU First-Class Scholarship",
+      "amount": "1,500.00",
+      "year": "2025"
     },
     {
       "year": "2024",
@@ -69,33 +90,19 @@
     },
     {
       "year": "2024",
-      "name": "Danghong Scholarship",
+      "name": "HDU-CS Danghong Scholarship",
       "amount": "2,000.00",
       "note": "One of only two sophomore recipients"
     },
     {
       "name": "HDU First-Class Scholarship",
-      "amount": "1,500.00"
+      "amount": "1,500.00",
+      "year": "2024"
     },
     {
       "name": "HDU First-Class Scholarship",
-      "amount": "1,500.00"
-    },
-    {
-      "name": "HDU First-Class Scholarship",
-      "amount": "1,500.00"
-    },
-    {
-      "name": "HDU First-Class Scholarship",
-      "amount": "1,500.00"
-    },
-    {
-      "name": "HDU First-Class Scholarship",
-      "amount": "1,500.00"
-    },
-    {
-      "name": "HDU First-Class Scholarship",
-      "amount": "1,500.00"
+      "amount": "1,500.00",
+      "year": "2024"
     }
   ]
 }
