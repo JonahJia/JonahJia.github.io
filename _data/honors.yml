@@ -1,5 +1,44 @@
 {
-  "distinctions": [],
+  "distinctions": [
+    {
+      "year": "2025",
+      "name": "“Qiuxin Star” Award, Hangzhou Dianzi University",
+      "note": "One of 10 recipients university-wide each year"
+    },
+    {
+      "year": "2025",
+      "name": "School Top 10 Student",
+      "note": "Only sophomore recipient in the School"
+    },
+    {
+      "year": "2025",
+      "name": "Outstanding Participant, Qingma Training Program"
+    },
+    {
+      "year": "2025",
+      "name": "Outstanding Individual in Innovation and Entrepreneurship"
+    },
+    {
+      "year": "2025",
+      "name": "Outstanding Communist Youth League Member"
+    },
+    {
+      "year": "2025",
+      "name": "Outstanding Student Leader"
+    },
+    {
+      "year": "2025",
+      "name": "Merit Student"
+    },
+    {
+      "year": "2025",
+      "name": "Outstanding Volunteer"
+    },
+    {
+      "year": "2024",
+      "name": "School Person of the Year"
+    }
+  ],
   "scholarships": [
     {
       "name": "First-Class Scholarship, Hangzhou Dianzi University",
@@ -13,7 +52,7 @@
     },
     {
       "year": "2024, 2025",
-      "name": "Tailong Scholarship",
+      "name": "“Tailong Star” Scholarship",
       "amount": "3,000.00",
       "note": "Only student university-wide to receive this scholarship in two consecutive years"
     },
