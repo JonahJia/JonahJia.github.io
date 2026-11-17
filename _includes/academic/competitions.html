@@ -1,12 +1,9 @@
 {% if site.data.competitions.international_national.size > 0 or site.data.competitions.regional_provincial.size > 0 %}
 {% if include.sidebar %}<h1 class="section-title" id="competitions">🏇🏻 Competitions</h1>{% else %}<section id="competitions" class="academic-section" aria-labelledby="competitions-heading"><h2 class="section-heading" id="competitions-heading"><span aria-hidden="true">🏇🏻</span> Competitions</h2>{% endif %}
-{% assign categories = 'international_national,regional_provincial' | split: ',' %}
-{% for category in categories %}{% assign entries = site.data.competitions[category] %}{% if entries.size > 0 %}
-{% capture category_title %}{% if category == 'international_national' %}International &amp; National Prizes{% else %}Regional &amp; Provincial Prizes{% endif %}{% endcapture %}
-<h2 class="sub-title">{{ category_title }}</h2>
-<div class="{% if include.sidebar %}scroll-box{% else %}surface funding-list{% endif %}" tabindex="0" role="region" aria-label="{{ category_title }}"><ul class="date-list">
-{% for item in entries %}<li>{% if item.year %}<span class="item-date">{{ item.year }}:</span>{% endif %}<span class="item-body">{% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.name }}</a>{% else %}{{ item.name }}{% endif %} (<strong>{{ item.award }}{% if item.role %}, {{ item.role }}{% endif %}{% if item.note %}, {{ item.note }}{% endif %}</strong>)</span></li>{% endfor %}
+{% assign entries = site.data.competitions.international_national | concat: site.data.competitions.regional_provincial %}
+{% assign years = entries | map: 'year' | uniq | sort | reverse %}
+<div class="{% if include.sidebar %}scroll-box{% else %}surface funding-list{% endif %}" tabindex="0" role="region" aria-label="Competition awards"><ul class="date-list">
+{% for year in years %}{% assign yearly_entries = entries | where: 'year', year %}{% for item in yearly_entries %}<li><span class="item-date">{{ item.year }}:</span><span class="item-body">{% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.name }}</a>{% else %}{{ item.name }}{% endif %} (<strong>{{ item.award }}{% if item.role %}, {{ item.role }}{% endif %}{% if item.note %}, {{ item.note }}{% endif %}</strong>)</span></li>{% endfor %}{% endfor %}
 </ul></div>{% if include.sidebar %}<div class="scroll-hint"><span aria-hidden="true">⬆</span> Scrollable</div>{% endif %}
-{% endif %}{% endfor %}
 {% unless include.sidebar %}</section>{% endunless %}
 {% endif %}
