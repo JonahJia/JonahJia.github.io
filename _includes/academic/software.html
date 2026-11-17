@@ -5,8 +5,7 @@
 <article class="{% if include.sidebar %}work-card{% else %}surface paper-card{% endif %} software-card" id="software-{{ software.id }}">
   <div class="{% if include.sidebar %}work-media{% else %}paper-visual{% endif %} software-media">
     <span class="{% if include.sidebar %}badge{% else %}venue-badge{% endif %}">{{ software.date }}</span>
-    <img src="{{ software.cover }}" alt="{% if software.featured_order == 2 %}Related chest X-ray bone suppression demonstration by Yifei Sun{% else %}Binocular fundus diagnosis software demonstration{% endif %}" loading="lazy">
-    <p class="software-demo-credit"><a href="https://diaoquesang.github.io/#software" target="_blank" rel="noopener noreferrer">{{ software.demo_credit }}</a></p>
+    <img src="{{ software.cover }}" alt="{% if software.featured_order == 2 %}Chest X-ray bone suppression demonstration{% else %}Binocular fundus diagnosis software demonstration{% endif %}" loading="lazy">
   </div>
   <div class="{% if include.sidebar %}work-body{% else %}paper-copy{% endif %}">
     <h3 class="work-title"><a href="{{ software.url }}" title="{{ software.title_zh }}" target="_blank" rel="noopener noreferrer">{{ software.title }}</a></h3>
