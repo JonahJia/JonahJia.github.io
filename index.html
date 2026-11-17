@@ -30,18 +30,9 @@ show_additional_sections: false
 {% include academic/publications.html %}
 {% include academic/honors.html %}
 {% include academic/funding.html %}
+{% include academic/open_source.html %}
 {% if page.show_additional_sections %}
-<section id="open-source" class="academic-section" aria-labelledby="opensource-heading">
-  <h2 class="section-heading" id="opensource-heading"><span aria-hidden="true">🛠️</span> Open Source</h2>
-  <div class="surface open-source-card">
-    <h3><a href="https://github.com/BeistMedAI/Paper-List-for-Prototypical-Learning" target="_blank" rel="noopener noreferrer">Paper List for Prototypical Learning</a></h3>
-    <p>A curated collection of papers on prototypical learning and interpretable AI.</p>
-    <div class="repository-badges">
-      <a href="https://github.com/BeistMedAI/Paper-List-for-Prototypical-Learning/stargazers" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/stars/BeistMedAI/Paper-List-for-Prototypical-Learning?style=flat-square&amp;label=Stars&amp;color=660874" alt="GitHub stars" loading="lazy" height="20"></a>
-      <a href="https://github.com/BeistMedAI/Paper-List-for-Prototypical-Learning/forks" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/forks/BeistMedAI/Paper-List-for-Prototypical-Learning?style=flat-square&amp;label=Forks&amp;color=526078" alt="GitHub forks" loading="lazy" height="20"></a>
-    </div>
-  </div>
-</section>
+
 <section id="service" class="academic-section" aria-labelledby="service-heading">
   <h2 class="section-heading" id="service-heading"><span aria-hidden="true">🤝</span> Academic Service</h2>
   <div class="surface service-card"><strong>Reviewer:</strong> {{ profile.service | join: ", " }}.</div>
