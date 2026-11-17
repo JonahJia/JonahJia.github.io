@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Paper List for Prototypical Learning",
+    "repository": "BeistMedAI/Paper-List-for-Prototypical-Learning",
+    "description": "A curated collection of papers on prototypical learning and interpretable AI."
+  },
+  {
+    "name": "Paper List for Medical Anomaly Detection",
+    "repository": "diaoquesang/Paper-List-for-Medical-Anomaly-Detection",
+    "description": "A curated collection of papers on medical anomaly detection."
+  },
+  {
+    "name": "Paper List for Medical Reasoning Large Language Models",
+    "repository": "HovChen/Paper-List-for-Medical-Reasoning-Large-Language-Models",
+    "description": "A curated collection of papers on medical reasoning with large language models and multimodal models."
+  }
+]
