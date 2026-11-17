@@ -24,3 +24,4 @@ exclude:
   - package.json
   - package-lock.json
   - homepage-content-notes.md
+  - REFERENCE-DESIGN.md

@@ -1,0 +1,29 @@
+---
+layout: sidebar
+title: Home
+permalink: /preview/
+preview: true
+show_additional_sections: false
+show_software: false
+---
+{% assign profile=site.data.homepage %}
+<h1 class="section-title" id="about">😉 About Me</h1>
+{% for paragraph in profile.bio %}<div class="md-block"><p><span aria-hidden="true">{% if forloop.index == 1 %}🌱{% elsif forloop.index == 2 %}🔭{% else %}💻{% endif %}</span> {{ paragraph }}</p></div>{% endfor %}
+<div class="md-block"><p><span aria-hidden="true">📫</span> How to reach me: <a href="mailto:{{ profile.email }}">{{ profile.email }}</a>.</p></div>
+<div class="badge-row">
+  <a href="{{ profile.github }}" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/stars/JonahJia" alt="GitHub stars" loading="lazy"></a>
+  <a href="{{ profile.github }}" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/followers/JonahJia" alt="GitHub followers" loading="lazy"></a>
+</div>
+{% include sidebar/entries.html id="education" icon="📖" title="Education" entries=profile.education %}
+{% include sidebar/entries.html id="research-experience" icon="💻" title="Experience" entries=profile.experience %}
+{% include sidebar/news.html %}
+{% include sidebar/publications.html %}
+{% if page.show_additional_sections %}
+<h1 class="section-title" id="honors">🏅 Honors</h1>
+<div class="scroll-box" tabindex="0" role="region" aria-label="Honors and awards"><ul class="date-list">{% for award in profile.awards %}<li><span class="item-date">{{ award.year }}:</span><span class="item-body">{{ award.name }}</span></li>{% endfor %}</ul></div><div class="scroll-hint"><span aria-hidden="true">⬆</span> Scrollable</div>
+<h1 class="section-title" id="services">🔖 Services</h1>
+<h2 class="sub-title">Conference Reviewer</h2>
+<div class="jnl-row">{% for venue in profile.service %}<span class="jnl-chip">{{ venue }}</span>{% endfor %}</div>
+{% endif %}
+{% include sidebar/software.html %}
+

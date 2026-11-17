@@ -1,0 +1,8 @@
+<h1 class="section-title" id="{{ include.id }}">{{ include.icon }} {{ include.title }}</h1>
+{% for entry in include.entries %}
+<article class="entry-card">
+  <div class="entry-logo{% if entry.logos.size > 1 %} joint-logos{% endif %}">{% for key in entry.logos %}{% assign logo=site.data.institutions[key] %}<img src="{{ logo.image | relative_url }}" alt="{{ logo.name }} logo" loading="lazy">{% endfor %}</div>
+  <div class="entry-body"><div class="entry-head"><span class="entry-role">{{ entry.role }}</span>{% if entry.period %}<span class="entry-date">{{ entry.period }}</span>{% endif %}</div><div class="entry-text">{{ entry.description }}</div></div>
+</article>
+{% endfor %}
+
