@@ -9,7 +9,7 @@
         {% endfor %}
       </div>
       <div class="experience-copy">
-        <div class="experience-meta"><h3 class="role-badge">{{ entry.role }}</h3>{% if entry.period %}<span class="period-badge">{{ entry.period }}</span>{% endif %}</div>
+        <div class="experience-meta"><h3 class="role-badge">{{ entry.role }}</h3>{% if entry.period %}<span class="period-badge">{{ entry.period | replace: ' – ', ' to ' }}</span>{% endif %}</div>
         <p>{{ entry.description }}</p>
       </div>
     </article>

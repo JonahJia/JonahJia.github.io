@@ -23,5 +23,6 @@ show_software: false
 <div class="jnl-row">{% for venue in profile.service %}<span class="jnl-chip">{{ venue }}</span>{% endfor %}</div>
 {% endif %}
 {% include sidebar/software.html %}
+{% include academic/competitions.html sidebar=true %}
 {% include academic/open_source.html sidebar=true %}
 

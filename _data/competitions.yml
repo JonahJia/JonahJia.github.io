@@ -1,0 +1,102 @@
+{
+  "international_national": [
+    {
+      "name": "Mathematical Contest in Modeling and Interdisciplinary Contest in Modeling (MCM/ICM)",
+      "url": "https://www.contest.comap.com/undergraduate/contests/mcm/",
+      "award": "Meritorious Winner",
+      "role": "Team Leader",
+      "year": "2026"
+    },
+    {
+      "year": "2025",
+      "name": "China International College Students' Innovation Competition",
+      "url": "https://cy.ncss.cn/",
+      "award": "National Gold Medal",
+      "note": "HDU's only national gold medal in 2025"
+    },
+    {
+      "year": "2025",
+      "name": "Blue Bridge Cup National Software and Information Technology Professional Talent Competition",
+      "url": "https://dasai.lanqiao.cn/",
+      "award": "National First Prize",
+      "role": "Technical Lead"
+    },
+    {
+      "name": "Mathematical Contest in Modeling and Interdisciplinary Contest in Modeling (MCM/ICM)",
+      "url": "https://www.contest.comap.com/undergraduate/contests/mcm/",
+      "award": "Meritorious Winner",
+      "role": "Team Leader",
+      "year": "2025"
+    },
+    {
+      "year": "2025",
+      "name": "Asia and Pacific Mathematical Contest in Modeling (APMCM)",
+      "url": "https://www.apmcm.org/",
+      "award": "First Prize",
+      "role": "Team Leader"
+    },
+    {
+      "year": "2025",
+      "name": "Chinese Collegiate Computing Competition",
+      "url": "https://jsjds.blcu.edu.cn/",
+      "award": "National Second Prize",
+      "role": "Project Leader"
+    },
+    {
+      "year": "2025",
+      "name": "“Challenge Cup” National College Student Extracurricular Academic Science and Technology Competition (Open Challenge Track)",
+      "url": "https://tiaozhanbei.net/",
+      "award": "National Second Prize",
+      "role": "Deputy Project Leader"
+    },
+    {
+      "year": "2025",
+      "name": "China's Innovation Challenge on Artificial Intelligence Application Scene",
+      "url": "https://www.cicas.cn/",
+      "award": "National Second Prize",
+      "note": "Listed third among 15 team members"
+    },
+    {
+      "year": "2025",
+      "name": "China College Students' Service Outsourcing Innovation and Entrepreneurship Competition",
+      "url": "http://www.fwwb.org.cn/",
+      "award": "National Third Prize",
+      "role": "Project Leader"
+    },
+    {
+      "name": "ICT Industry-Teaching Integration Innovation Competition",
+      "url": "https://news.bupt.edu.cn/info/1012/31306.htm",
+      "award": "National Second Prize",
+      "role": "Project Leader"
+    },
+    {
+      "name": "ICT Industry-Teaching Integration Innovation Competition",
+      "url": "https://news.bupt.edu.cn/info/1012/31306.htm",
+      "award": "National Second Prize",
+      "role": "Project Leader"
+    },
+    {
+      "name": "ICT Industry-Teaching Integration Innovation Competition",
+      "url": "https://news.bupt.edu.cn/info/1012/31306.htm",
+      "award": "National Second Prize",
+      "role": "Project Leader"
+    }
+  ],
+  "regional_provincial": [
+    {
+      "year": "2025",
+      "name": "China Undergraduate Mathematical Contest in Modeling (CUMCM)",
+      "url": "http://www.mcm.edu.cn/",
+      "award": "Zhejiang Provincial First Prize",
+      "role": "Team Leader",
+      "note": "Highest score among HDU teams"
+    },
+    {
+      "year": "2024",
+      "name": "“CCB Cup” Zhejiang International College Students' Innovation Competition",
+      "url": "https://cy.ncss.cn/",
+      "award": "Provincial Gold Medal",
+      "role": "Deputy Project Leader"
+    }
+  ]
+}

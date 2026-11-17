@@ -32,6 +32,7 @@
         {% if site.data.funding.size > 0 %}<li><a class="nav-link" href="#funding">Funding</a></li>{% endif %}
         {% if page.show_additional_sections %}<li><a class="nav-link" href="#services">Services</a></li>{% endif %}
         {% if page.show_software and site.data.software.size > 0 %}<li><a class="nav-link" href="#software">Software</a></li>{% endif %}
+        {% if site.data.competitions.international_national.size > 0 or site.data.competitions.regional_provincial.size > 0 %}<li><a class="nav-link" href="#competitions">Competitions</a></li>{% endif %}
         <li><a class="nav-link" href="#open-source">Open Source</a></li>
       </ul></nav>
       <ul class="social">

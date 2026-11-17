@@ -3,7 +3,7 @@
 {% assign categories = 'distinctions,scholarships' | split: ',' %}{% for category in categories %}{% assign entries = site.data.honors[category] %}{% if entries.size > 0 %}
 <h2 class="sub-title">{% if category == 'scholarships' %}Scholarships{% else %}Distinctions{% endif %}</h2>
 <div class="{% if include.sidebar %}scroll-box{% else %}surface funding-list{% endif %}" tabindex="0" role="region" aria-label="{{ category | capitalize }}"><ul class="date-list">
-{% for item in entries %}<li>{% if item.year %}<span class="item-date">{{ item.year }}:</span>{% endif %}<span class="item-body">{{ item.name }}{% if item.amount %} (<strong>CNY {{ item.amount }} per award</strong>){% endif %}{% if item.note %} — <strong>{{ item.note }}</strong>{% endif %}</span></li>{% endfor %}
+{% for item in entries %}<li>{% if item.year %}<span class="item-date">{{ item.year }}:</span>{% endif %}<span class="item-body">{{ item.name }}{% if item.amount or item.note %} (<strong>{% if item.amount %}CNY {{ item.amount }}{% endif %}{% if item.amount and item.note %}, {% endif %}{{ item.note }}</strong>){% endif %}</span></li>{% endfor %}
 </ul></div>{% if include.sidebar %}<div class="scroll-hint"><span aria-hidden="true">⬆</span> Scrollable</div>{% endif %}
 {% endif %}{% endfor %}
 {% unless include.sidebar %}</section>{% endunless %}
