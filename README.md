@@ -21,16 +21,16 @@ Live site: https://jonahjia.github.io/
 | Conference and preprint metadata, ordered full authors, verified links and framework images | `_data/papers.yml`, `_data/preprints.yml` |
 | Author highlighting and personal homepage links | `_data/paper_authors.yml` |
 | Dated conference news | `_data/updates.yml` |
-| Navigation | `_data/navigation.yml` |
-| Homepage and legacy publications URL redirect | `index.html`, `publications.html` |
-| Reusable page sections | `_includes/academic/` |
-| Styling and framework image enlargement | `assets/css/academic.css`, `assets/js/academic.js` |
+| Navigation | `_data/sidebar_navigation.yml`, `_layouts/sidebar.html` |
+| Homepage and legacy URL redirects | `index.html`, `design-preview.html`, `publications.html` |
+| Reusable page sections | `_includes/sidebar/`, `_includes/academic/` |
+| Sidebar styling, navigation and framework image enlargement | `assets/css/sidebar-reference.css`, `assets/css/sidebar-personal.css`, `assets/js/sidebar.js` |
 
 The data files use JSON syntax, which is valid YAML and is read by Jekyll. Education and research experience precede news and publications. Conference Papers displays three selected first-author papers as image cards and five additional publications as compact entries. Preprint Papers follows with two image cards, ordered CausalProto then DeBoneDiT. Each framework image opens at a larger size. Full author lists are retained, with Junhao Jia highlighted in Tsinghua purple (`#660874`) and equal contributions marked with `*`.
 
-The site uses a single-page layout: Home jumps to the top, and Publications jumps to the homepage’s publications section. The old `/publications.html` URL redirects to `/#publications`. Publication resource buttons are currently hidden; their link metadata is retained for later use.
+The approved sidebar design is the official homepage at `/`. Sidebar navigation jumps to sections on that page. The old `/preview/` URL redirects to `/`, preserving section anchors, and `/publications.html` redirects to `/#publications`. Publication resource buttons are currently hidden; their link metadata is retained for later use.
 
-Both the homepage and `/preview/` display honors, funding, services, patents, software, competitions and open source after publications. Services use one reviewer list without conference or journal subdivisions. The preview uses the sidebar layout adapted from Yifei Sun's site.
+The homepage displays honors, funding, services, patents, software, competitions and open source after publications. Services use one reviewer list without conference or journal subdivisions. The sidebar layout is adapted from Yifei Sun's site.
 
 Software records are based on the supplied registration certificates. The two featured GIFs are embedded from `https://diaoquesang.github.io/images/IDSODBBFMI.gif` and `https://diaoquesang.github.io/images/DMBBSSCXR.gif`, as requested. The second is credited as a related bone suppression demonstration, separate from the registered software's own title, date and copyright holders. Chinese registered titles are retained in the data and title tooltips. Patent labels follow the document type; a publication notice is not treated as a grant certificate.
 

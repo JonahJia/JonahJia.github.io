@@ -3,9 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Junhao Jia | Academic Homepage{% if page.preview %} Preview{% endif %}</title>
+  <title>Junhao Jia | Academic Homepage</title>
   <meta name="description" content="{{ site.description | escape }}">
-  {% if page.preview %}<meta name="robots" content="noindex, nofollow">{% endif %}
+  <meta property="og:title" content="Junhao Jia | Academic Homepage">
+  <meta property="og:description" content="{{ site.description | escape }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ '/' | absolute_url }}">
+  <meta property="og:image" content="{{ site.data.portrait.image | absolute_url }}">
   <link rel="canonical" href="{{ '/' | absolute_url }}">
   <link rel="icon" href="{{ site.data.portrait.image | relative_url }}" type="{{ site.data.portrait.mime }}">
   <meta name="theme-color" content="#2f6fed">

@@ -1,36 +1,21 @@
 ---
-layout: default
+layout: sidebar
 title: Home
-navbar_title: Home
+show_software: true
 ---
-{% assign profile = site.data.homepage %}
-<header class="profile-intro">
-  <img class="profile-avatar" src="{{ site.data.portrait.image | relative_url }}" alt="{{ site.data.portrait.alt }}" width="160" height="160">
-  <div class="profile-info">
-    <h1>{{ profile.name }}</h1>
-    <p class="profile-position">Incoming PhD Student, College of AI, Tsinghua University</p>
-    <p class="profile-position secondary">Undergraduate Student, Hangzhou Dianzi University</p>
-    <p class="profile-position secondary"><span aria-hidden="true">📍</span> Haidian, Beijing, China</p>
-    <div class="profile-contact">
-      <a href="mailto:{{ profile.email }}"><span aria-hidden="true">✉</span> {{ profile.email }}</a>
-      <a href="{{ profile.scholar }}" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-      <a href="{{ profile.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
-    </div>
-  </div>
-</header>
-<section id="about" class="about-section" aria-labelledby="about-heading">
-  <h2 id="about-heading" class="about-heading">About Me</h2>
-  {% for paragraph in profile.bio %}<p>{% if forloop.index == 2 %}{{ site.data.research.summary }}{% else %}{{ paragraph | replace: 'Advised by', 'Supervised by' | replace: 'advised by', 'supervised by' | replace: 'Mentored by', 'Supervised by' | replace: 'mentored by', 'supervised by' }}{% endif %}</p>{% endfor %}
-  {% include academic/metrics.html %}
-</section>
-{% include academic/experience.html id="education" icon="📖" title="Education" entries=profile.education %}
-{% include academic/experience.html id="research-experience" icon="💻" title="Research Experience" entries=site.data.experience %}
-{% include academic/news.html %}
-{% include academic/publications.html %}
-{% include academic/honors.html %}
-{% include academic/funding.html %}
-{% include academic/services.html %}
-{% include academic/patents.html %}
-{% include academic/software.html %}
-{% include academic/competitions.html %}
-{% include academic/open_source.html %}
+{% assign profile=site.data.homepage %}
+<h1 class="section-title" id="about">😉 About Me</h1>
+{% for paragraph in profile.bio %}<div class="md-block"><p><span aria-hidden="true">{% if forloop.index == 1 %}🌱{% elsif forloop.index == 2 %}🔭{% else %}💻{% endif %}</span> {% if forloop.index == 2 %}{{ site.data.research.summary }}{% else %}{{ paragraph | replace: 'Advised by', 'Supervised by' | replace: 'advised by', 'supervised by' | replace: 'Mentored by', 'Supervised by' | replace: 'mentored by', 'supervised by' }}{% endif %}</p></div>{% endfor %}
+<div class="md-block"><p><span aria-hidden="true">📫</span> How to reach me: <a href="mailto:{{ profile.email }}">{{ profile.email }}</a>.</p></div>
+{% include academic/metrics.html %}
+{% include sidebar/entries.html id="education" icon="📖" title="Education" entries=profile.education %}
+{% include sidebar/entries.html id="research-experience" icon="💻" title="Experience" entries=site.data.experience %}
+{% include sidebar/news.html %}
+{% include sidebar/publications.html %}
+{% include academic/honors.html sidebar=true %}
+{% include academic/funding.html sidebar=true %}
+{% include academic/services.html sidebar=true %}
+{% include academic/patents.html sidebar=true %}
+{% include sidebar/software.html %}
+{% include academic/competitions.html sidebar=true %}
+{% include academic/open_source.html sidebar=true %}

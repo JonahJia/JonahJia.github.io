@@ -1,24 +1,17 @@
 ---
-layout: sidebar
-title: Home
+layout: null
 permalink: /preview/
-preview: true
-show_software: true
 ---
-{% assign profile=site.data.homepage %}
-<h1 class="section-title" id="about">😉 About Me</h1>
-{% for paragraph in profile.bio %}<div class="md-block"><p><span aria-hidden="true">{% if forloop.index == 1 %}🌱{% elsif forloop.index == 2 %}🔭{% else %}💻{% endif %}</span> {% if forloop.index == 2 %}{{ site.data.research.summary }}{% else %}{{ paragraph | replace: 'Advised by', 'Supervised by' | replace: 'advised by', 'supervised by' | replace: 'Mentored by', 'Supervised by' | replace: 'mentored by', 'supervised by' }}{% endif %}</p></div>{% endfor %}
-<div class="md-block"><p><span aria-hidden="true">📫</span> How to reach me: <a href="mailto:{{ profile.email }}">{{ profile.email }}</a>.</p></div>
-{% include academic/metrics.html %}
-{% include sidebar/entries.html id="education" icon="📖" title="Education" entries=profile.education %}
-{% include sidebar/entries.html id="research-experience" icon="💻" title="Experience" entries=site.data.experience %}
-{% include sidebar/news.html %}
-{% include sidebar/publications.html %}
-{% include academic/honors.html sidebar=true %}
-{% include academic/funding.html sidebar=true %}
-{% include academic/services.html sidebar=true %}
-{% include academic/patents.html sidebar=true %}
-{% include sidebar/software.html %}
-{% include academic/competitions.html sidebar=true %}
-{% include academic/open_source.html sidebar=true %}
-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Junhao Jia | Academic Homepage</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="{{ '/' | absolute_url }}">
+  <meta http-equiv="refresh" content="0; url={{ '/' | relative_url }}">
+  <script>window.location.replace({{ '/' | relative_url | jsonify }} + window.location.hash);</script>
+</head>
+<body><p><a href="{{ '/' | relative_url }}">Continue to Junhao Jia's homepage.</a></p></body>
+</html>
