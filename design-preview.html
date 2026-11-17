@@ -4,11 +4,11 @@ title: Home
 permalink: /preview/
 preview: true
 show_additional_sections: false
-show_software: false
+show_software: true
 ---
 {% assign profile=site.data.homepage %}
 <h1 class="section-title" id="about">😉 About Me</h1>
-{% for paragraph in profile.bio %}<div class="md-block"><p><span aria-hidden="true">{% if forloop.index == 1 %}🌱{% elsif forloop.index == 2 %}🔭{% else %}💻{% endif %}</span> {% if forloop.index == 2 %}{{ site.data.research.summary }}{% else %}{{ paragraph }}{% endif %}</p></div>{% endfor %}
+{% for paragraph in profile.bio %}<div class="md-block"><p><span aria-hidden="true">{% if forloop.index == 1 %}🌱{% elsif forloop.index == 2 %}🔭{% else %}💻{% endif %}</span> {% if forloop.index == 2 %}{{ site.data.research.summary }}{% else %}{{ paragraph | replace: 'Advised by', 'Supervised by' | replace: 'advised by', 'supervised by' | replace: 'Mentored by', 'Supervised by' | replace: 'mentored by', 'supervised by' }}{% endif %}</p></div>{% endfor %}
 <div class="md-block"><p><span aria-hidden="true">📫</span> How to reach me: <a href="mailto:{{ profile.email }}">{{ profile.email }}</a>.</p></div>
 {% include academic/metrics.html %}
 {% include sidebar/entries.html id="education" icon="📖" title="Education" entries=profile.education %}
@@ -22,6 +22,7 @@ show_software: false
 <h2 class="sub-title">Conference Reviewer</h2>
 <div class="jnl-row">{% for venue in profile.service %}<span class="jnl-chip">{{ venue }}</span>{% endfor %}</div>
 {% endif %}
+{% include academic/patents.html sidebar=true %}
 {% include sidebar/software.html %}
 {% include academic/competitions.html sidebar=true %}
 {% include academic/open_source.html sidebar=true %}

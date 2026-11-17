@@ -1,0 +1,7 @@
+{% if site.data.patents.size > 0 %}
+{% if include.sidebar %}<h1 class="section-title" id="patents">🔬 Patents</h1>{% else %}<section id="patents" class="academic-section" aria-labelledby="patents-heading"><h2 class="section-heading" id="patents-heading"><span aria-hidden="true">🔬</span> Patents</h2>{% endif %}
+<h2 class="sub-title">CN Invention Patents</h2>
+<div class="{% if include.sidebar %}scroll-box{% else %}surface funding-list{% endif %}" tabindex="0" role="region" aria-label="Chinese invention patents"><ul class="date-list">
+{% for patent in site.data.patents %}<li><time class="item-date" datetime="{{ patent.date }}">{{ patent.year }}:</time><span class="item-body"><a href="{{ patent.url }}" target="_blank" rel="noopener noreferrer" title="{{ patent.number | default: patent.application_number }}">{{ patent.title }}</a> (<strong>{{ patent.status }}{% if patent.inventor_role %}, {{ patent.inventor_role }}{% endif %}</strong>)</span></li>{% endfor %}
+</ul></div>{% if include.sidebar %}<div class="scroll-hint"><span aria-hidden="true">⬆</span> Scrollable</div>{% else %}</section>{% endif %}
+{% endif %}

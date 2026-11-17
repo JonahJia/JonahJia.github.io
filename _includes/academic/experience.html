@@ -10,7 +10,7 @@
       </div>
       <div class="experience-copy">
         <div class="experience-meta"><h3 class="role-badge">{{ entry.role }}</h3>{% if entry.period %}<span class="period-badge">{{ entry.period | replace: ' – ', ' to ' }}</span>{% endif %}</div>
-        <p>{{ entry.description }}</p>
+        <p>{{ entry.description | replace: 'Advised by', 'Supervised by' | replace: 'advised by', 'supervised by' | replace: 'Mentored by', 'Supervised by' | replace: 'mentored by', 'supervised by' }}</p>
       </div>
     </article>
     {% endfor %}

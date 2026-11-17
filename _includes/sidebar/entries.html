@@ -2,7 +2,7 @@
 {% for entry in include.entries %}
 <article class="entry-card">
   <div class="entry-logo{% if entry.logos.size > 1 %} joint-logos{% endif %}">{% for key in entry.logos %}{% assign logo=site.data.institutions[key] %}<img src="{{ logo.image | relative_url }}" alt="{{ logo.name }} logo" loading="lazy">{% endfor %}</div>
-  <div class="entry-body"><div class="entry-head"><span class="entry-role">{{ entry.role }}</span>{% if entry.period %}<span class="entry-date">{{ entry.period | replace: ' – ', ' to ' }}</span>{% endif %}</div><div class="entry-text">{{ entry.description }}</div></div>
+  <div class="entry-body"><div class="entry-head"><span class="entry-role">{{ entry.role }}</span>{% if entry.period %}<span class="entry-date">{{ entry.period | replace: ' – ', ' to ' }}</span>{% endif %}</div><div class="entry-text">{{ entry.description | replace: 'Advised by', 'Supervised by' | replace: 'advised by', 'supervised by' | replace: 'Mentored by', 'Supervised by' | replace: 'mentored by', 'supervised by' }}</div></div>
 </article>
 {% endfor %}
 

@@ -8,7 +8,11 @@ Live site: https://jonahjia.github.io/
 
 | Content | File |
 | --- | --- |
-| Bio, contact details, education, experience, honors, service | `_data/homepage.yml` |
+| Bio, contact details, education and experience | `_data/homepage.yml` |
+| Current research statement | `_data/research.yml` |
+| Honors, funding and competitions | `_data/honors.yml`, `_data/funding.yml`, `_data/competitions.yml` |
+| Patent publication and grant records | `_data/patents.yml` |
+| Registered software and copyright holder order | `_data/software.yml` |
 | Institution logos | `_data/institutions.yml` |
 | All publication metadata, ordered full authors, verified links and framework images | `_data/papers.yml` |
 | Author highlighting and personal homepage links | `_data/paper_authors.yml` |
@@ -22,7 +26,9 @@ The data files use JSON syntax, which is valid YAML and is read by Jekyll. Educa
 
 The site uses a single-page layout: Home jumps to the top, and Publications jumps to the homepage’s publications section. The old `/publications.html` URL redirects to `/#publications`. Publication resource buttons are currently hidden; their link metadata is retained for later use.
 
-The homepage currently ends with publications. Honors, open source, and academic service remain in the source and can be restored by setting `show_additional_sections: true` in the front matter of `index.html`.
+Both the homepage and `/preview/` display honors, funding, patents, software, competitions and open source after publications. Academic service remains hidden pending content confirmation. The preview uses the sidebar layout adapted from Yifei Sun's site.
+
+Software records are based on the supplied registration certificates. The two featured GIFs are embedded from `https://diaoquesang.github.io/images/IDSODBBFMI.gif` and `https://diaoquesang.github.io/images/DMBBSSCXR.gif`, as requested. The second is credited as a related bone suppression demonstration, separate from the registered software's own title, date and copyright holders. Chinese registered titles are retained in the data and title tooltips. Patent labels follow the document type; a publication notice is not treated as a grant certificate.
 
 Keep news entries in descending `YYYY.MM` order, link to the conference homepage, and put acceptance, oral selection and award selection in separate entries. Assets and source credits are in `assets/images/logos/` and `assets/images/publications/`. Older template data and widgets remain available but are not used by the new homepage.
 

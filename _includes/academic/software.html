@@ -1,0 +1,23 @@
+{% if site.data.software.size > 0 %}
+{% if include.sidebar %}<h1 class="section-title" id="software">📱 Software</h1>{% else %}<section id="software" class="academic-section" aria-labelledby="software-heading"><h2 class="section-heading" id="software-heading"><span aria-hidden="true">📱</span> Software</h2>{% endif %}
+{% assign featured_software = site.data.software | where_exp: 'item', 'item.featured_order' | sort: 'featured_order' %}
+{% for software in featured_software %}
+<article class="{% if include.sidebar %}work-card{% else %}surface paper-card{% endif %} software-card" id="software-{{ software.id }}">
+  <div class="{% if include.sidebar %}work-media{% else %}paper-visual{% endif %} software-media">
+    <span class="{% if include.sidebar %}badge{% else %}venue-badge{% endif %}">{{ software.date }}</span>
+    <img src="{{ software.cover }}" alt="{% if software.featured_order == 2 %}Related chest X-ray bone suppression demonstration by Yifei Sun{% else %}Binocular fundus diagnosis software demonstration{% endif %}" loading="lazy">
+    <p class="software-demo-credit"><a href="https://diaoquesang.github.io/#software" target="_blank" rel="noopener noreferrer">{{ software.demo_credit }}</a></p>
+  </div>
+  <div class="{% if include.sidebar %}work-body{% else %}paper-copy{% endif %}">
+    <h3 class="work-title"><a href="{{ software.url }}" title="{{ software.title_zh }}" target="_blank" rel="noopener noreferrer">{{ software.title }}</a></h3>
+    <div aria-label="Copyright holders">{% include academic/authors.html paper=software %}</div>
+    <p class="software-registration">Software Copyright Registration No. {{ software.registration_number }}</p>
+  </div>
+</article>
+{% endfor %}
+<div class="{% if include.sidebar %}scroll-box{% else %}surface funding-list{% endif %} software-list" tabindex="0" role="region" aria-label="Additional registered software"><ul class="date-list">
+{% for software in site.data.software %}{% unless software.featured_order %}
+<li id="software-{{ software.id }}"><time class="item-date" datetime="{{ software.registration_date }}">{{ software.date }}:</time><div class="item-body"><a class="paper-title" href="{{ software.url }}" title="{{ software.title_zh }}" target="_blank" rel="noopener noreferrer">{{ software.title }}</a><div aria-label="Copyright holders">{% include academic/authors.html paper=software %}</div><p class="software-registration">Software Copyright Registration No. {{ software.registration_number }}</p></div></li>
+{% endunless %}{% endfor %}
+</ul></div>{% if include.sidebar %}<div class="scroll-hint"><span aria-hidden="true">⬆</span> Scrollable</div>{% else %}</section>{% endif %}
+{% endif %}

@@ -1,0 +1,318 @@
+[
+  {
+    "id": "curriculum-education-llm",
+    "title": "LLM-Driven System for Deep Integration of Ideological and Political Education into Courses (V1.0)",
+    "title_zh": "大语言模型驱动的课程思政深度融合系统",
+    "version": "V1.0",
+    "date": "2025.09",
+    "registration_date": "2025-09-29",
+    "registration_number": "2025SR1908211",
+    "authors": [
+      "Qinlin Cai",
+      "Junhao Jia"
+    ],
+    "copyright_holders_zh": [
+      "蔡沁霖",
+      "贾均灏"
+    ],
+    "copyright_owner_position": 2,
+    "url": "https://www.ccopyright.com/"
+  },
+  {
+    "id": "childhood-adhd-screening",
+    "title": "Early Screening Software for Childhood ADHD (V1.0)",
+    "title_zh": "儿童多动症早期筛查软件",
+    "version": "V1.0",
+    "date": "2025.09",
+    "registration_date": "2025-09-22",
+    "registration_number": "2025SR1831293",
+    "authors": [
+      "Yuqing Wang",
+      "Liqi Yan",
+      "Junhao Jia"
+    ],
+    "copyright_holders_zh": [
+      "汪雨晴",
+      "颜力琦",
+      "贾均灏"
+    ],
+    "copyright_owner_position": 3,
+    "url": "https://www.ccopyright.com/"
+  },
+  {
+    "id": "chest-xray-bone-suppression",
+    "title": "Medical Intelligent Chest X-Ray Bone Suppression System (V1.0)",
+    "title_zh": "医用智能胸部X射线骨抑制系统",
+    "version": "V1.0",
+    "date": "2025.09",
+    "registration_date": "2025-09-04",
+    "registration_number": "2025SR1694971",
+    "authors": [
+      "Ruihan Yang",
+      "Linfeng Luo",
+      "Xiaoyu Huang",
+      "Yifei Sun",
+      "Junhao Jia"
+    ],
+    "copyright_holders_zh": [
+      "杨睿涵",
+      "罗淋峰",
+      "黄效瑜",
+      "孙逸飞",
+      "贾均灏"
+    ],
+    "copyright_owner_position": 5,
+    "url": "https://www.ccopyright.com/",
+    "cover": "https://diaoquesang.github.io/images/DMBBSSCXR.gif",
+    "featured_order": 2,
+    "demo_credit": "Related bone suppression demo: Yifei Sun"
+  },
+  {
+    "id": "realtime-object-detection",
+    "title": "Real-Time Object Detection and Processing System (V1.0)",
+    "title_zh": "实时目标检测处理系统",
+    "version": "V1.0",
+    "date": "2025.08",
+    "registration_date": "2025-08-28",
+    "registration_number": "2025SR1636663",
+    "authors": [
+      "Beining Wu",
+      "Anqi Leng",
+      "Junhao Jia",
+      "Ting Liu",
+      "Feiwei Qin"
+    ],
+    "copyright_holders_zh": [
+      "吴贝柠",
+      "冷安琪",
+      "贾均灏",
+      "刘婷",
+      "秦飞巍"
+    ],
+    "copyright_owner_position": 3,
+    "url": "https://www.ccopyright.com/"
+  },
+  {
+    "id": "interpretable-ocular-lesions",
+    "title": "Intelligent Detection System for Fine-Grained Ocular Lesions Oriented to Clinical Interpretability (V1.0)",
+    "title_zh": "面向临床可解释性的眼科细粒度病灶智能检测系统",
+    "version": "V1.0",
+    "date": "2025.08",
+    "registration_date": "2025-08-13",
+    "registration_number": "2025SR1527206",
+    "authors": [
+      "Junhao Jia",
+      "Shuo Jiang",
+      "Yifei Sun",
+      "Yuting Shi",
+      "Hanwen Zheng"
+    ],
+    "copyright_holders_zh": [
+      "贾均灏",
+      "蒋硕",
+      "孙逸飞",
+      "施雨婷",
+      "郑涵文"
+    ],
+    "copyright_owner_position": 1,
+    "url": "https://www.ccopyright.com/"
+  },
+  {
+    "id": "pontine-infarction-progression",
+    "title": "Pontine Infarction Progression Prediction Software (V1.0)",
+    "title_zh": "脑桥梗死进展预测软件",
+    "version": "V1.0",
+    "date": "2025.07",
+    "registration_date": "2025-07-07",
+    "registration_number": "2025SR1182907",
+    "authors": [
+      "Cheng Yang",
+      "Junhao Jia",
+      "Hui Jin"
+    ],
+    "copyright_holders_zh": [
+      "杨承",
+      "贾均灏",
+      "金辉"
+    ],
+    "copyright_owner_position": 2,
+    "url": "https://www.ccopyright.com/"
+  },
+  {
+    "id": "multimodal-adhd-analysis",
+    "title": "Intelligent Integrated Analysis Platform for Multimodal Brain Imaging and ADHD Behavioral Data (V1.0)",
+    "title_zh": "多模态脑成像与ADHD智能行为数据综合分析平台",
+    "version": "V1.0",
+    "date": "2025.06",
+    "registration_date": "2025-06-06",
+    "registration_number": "2025SR0943947",
+    "authors": [
+      "Junhao Jia"
+    ],
+    "copyright_holders_zh": [
+      "贾均灏"
+    ],
+    "copyright_owner_position": 1,
+    "url": "https://www.ccopyright.com/"
+  },
+  {
+    "id": "mci-progression-prediction",
+    "title": "Intelligent Mild Cognitive Impairment Progression Prediction System Using Multimodal Clinical Data Fusion (V1.0)",
+    "title_zh": "基于临床多模态数据融合的轻度认知障碍进展趋势智能预测系统",
+    "version": "V1.0",
+    "date": "2025.05",
+    "registration_date": "2025-05-30",
+    "registration_number": "2025SR0902104",
+    "authors": [
+      "Junhao Jia"
+    ],
+    "copyright_holders_zh": [
+      "贾均灏"
+    ],
+    "copyright_owner_position": 1,
+    "url": "https://www.ccopyright.com/"
+  },
+  {
+    "id": "alzheimers-prediction",
+    "title": "Intelligent Alzheimer's Disease Prediction and Analysis System (V1.0)",
+    "title_zh": "阿兹海默智能预测分析系统",
+    "version": "V1.0",
+    "date": "2025.05",
+    "registration_date": "2025-05-23",
+    "registration_number": "2025SR0857798",
+    "authors": [
+      "Junhao Jia"
+    ],
+    "copyright_holders_zh": [
+      "贾均灏"
+    ],
+    "copyright_owner_position": 1,
+    "url": "https://www.ccopyright.com/"
+  },
+  {
+    "id": "binocular-fundus-diagnosis",
+    "title": "Intelligent Diagnosis System for Ophthalmic Diseases Based on Binocular Fundus Medical Imaging (V1.0)",
+    "title_zh": "基于双目眼底医学影像的眼科疾病智能诊断系统",
+    "version": "V1.0",
+    "date": "2025.04",
+    "registration_date": "2025-04-22",
+    "registration_number": "2025SR0652269",
+    "authors": [
+      "Junhao Jia",
+      "Shuo Jiang",
+      "Yifei Sun",
+      "Yuting Shi",
+      "Hanwen Zheng"
+    ],
+    "copyright_holders_zh": [
+      "贾均灏",
+      "蒋硕",
+      "孙逸飞",
+      "施雨婷",
+      "郑涵文"
+    ],
+    "copyright_owner_position": 1,
+    "url": "https://www.ccopyright.com/",
+    "cover": "https://diaoquesang.github.io/images/IDSODBBFMI.gif",
+    "featured_order": 1,
+    "demo_credit": "Demo: Yifei Sun"
+  },
+  {
+    "id": "pediatric-mandibular-fracture",
+    "title": "Pediatric Mandibular Fracture Line Detection System (V1.0)",
+    "title_zh": "儿童下颌骨骨折线检测系统",
+    "version": "V1.0",
+    "date": "2025.04",
+    "registration_date": "2025-04-15",
+    "registration_number": "2025SR0617731",
+    "authors": [
+      "Junhao Jia",
+      "Binhan Zhao",
+      "Yunyou Liu",
+      "Zao Hu",
+      "Wenyue Zhang"
+    ],
+    "copyright_holders_zh": [
+      "贾均灏",
+      "赵彬涵",
+      "刘蕴攸",
+      "胡藻",
+      "张文玥"
+    ],
+    "copyright_owner_position": 1,
+    "url": "https://www.ccopyright.com/"
+  },
+  {
+    "id": "mri-pet-conversion",
+    "title": "Medical Intelligent MRI-PET Cross-Modal Conversion System (V1.0)",
+    "title_zh": "医用智能MRI-PET跨模态转换系统",
+    "version": "V1.0",
+    "date": "2025.02",
+    "registration_date": "2025-02-28",
+    "registration_number": "2025SR0348057",
+    "authors": [
+      "Yifei Sun",
+      "Xiangyang Hu",
+      "Xiangyu Shen",
+      "Junhao Jia",
+      "Yuanhan Wang"
+    ],
+    "copyright_holders_zh": [
+      "孙逸飞",
+      "胡项洋",
+      "沈向宇",
+      "贾均灏",
+      "王远瀚"
+    ],
+    "copyright_owner_position": 4,
+    "url": "https://www.ccopyright.com/"
+  },
+  {
+    "id": "adhd-eeg-diagnosis",
+    "title": "ADHD EEG Processing and Diagnostic Classification System (V1.0)",
+    "title_zh": "ADHD脑电信号处理与分类诊断系统",
+    "version": "V1.0",
+    "date": "2024.08",
+    "registration_date": "2024-08-07",
+    "registration_number": "2024SR1139035",
+    "authors": [
+      "Yanhui Song",
+      "Junhao Jia",
+      "Duanpo Wu",
+      "Peiheng He"
+    ],
+    "copyright_holders_zh": [
+      "宋妍慧",
+      "贾均灏",
+      "吴端坡",
+      "何佩恒"
+    ],
+    "copyright_owner_position": 2,
+    "url": "https://www.ccopyright.com/"
+  },
+  {
+    "id": "garment-customization",
+    "title": "End-to-End Intelligent Garment Customization System Using Text, Sketches, and Styles (V1.0)",
+    "title_zh": "文本线稿款式全流程服装智能定制系统",
+    "version": "V1.0",
+    "date": "2024.07",
+    "registration_date": "2024-07-09",
+    "registration_number": "2024SR0962652",
+    "authors": [
+      "Huanhao Chen",
+      "Junhao Jia",
+      "Rui Yin",
+      "杨辉晟",
+      "Xufeng Ge"
+    ],
+    "copyright_holders_zh": [
+      "陈欢浩",
+      "贾均灏",
+      "殷睿",
+      "杨辉晟",
+      "葛徐峰"
+    ],
+    "copyright_owner_position": 2,
+    "url": "https://www.ccopyright.com/"
+  }
+]

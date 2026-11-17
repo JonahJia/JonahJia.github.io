@@ -1,15 +1,2 @@
-{% if page.show_software and site.data.software.size > 0 %}
-<h1 class="section-title" id="software">📱 Software</h1>
-{% for software in site.data.software %}{% if software.cover %}
-<article class="work-card software-card">
-  <div class="work-media"><span class="badge">{{ software.date }}</span><img src="{{ software.cover }}" alt="{{ software.title | escape }}" loading="lazy"></div>
-  <div class="work-body"><h3 class="work-title">{{ software.title }}</h3>{% include academic/authors.html paper=software %}</div>
-</article>
-{% endif %}{% endfor %}
-<div class="scroll-box" tabindex="0" role="region" aria-label="Additional software"><ul class="date-list">
-{% for software in site.data.software %}{% unless software.cover %}
-<li><time class="item-date" datetime="{{ software.date | replace: '.', '-' }}">{{ software.date }}:</time><div class="item-body"><span class="paper-title">{{ software.title }}</span>{% include academic/authors.html paper=software %}</div></li>
-{% endunless %}{% endfor %}
-</ul></div><div class="scroll-hint"><span aria-hidden="true">⬆</span> Scrollable</div>
-{% endif %}
+{% if page.show_software %}{% include academic/software.html sidebar=true %}{% endif %}
 
