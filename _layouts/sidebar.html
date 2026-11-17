@@ -7,7 +7,7 @@
   <meta name="description" content="{{ site.description | escape }}">
   {% if page.preview %}<meta name="robots" content="noindex, nofollow">{% endif %}
   <link rel="canonical" href="{{ '/' | absolute_url }}">
-  <link rel="icon" href="{{ site.data.homepage.portrait | relative_url }}" type="image/png">
+  <link rel="icon" href="{{ site.data.portrait.image | relative_url }}" type="{{ site.data.portrait.mime }}">
   <meta name="theme-color" content="#2f6fed">
   <script>try{var t=localStorage.getItem('academic-theme');if(!t)t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}</script>
   <link rel="stylesheet" href="{{ '/assets/css/sidebar-reference.css' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
@@ -19,7 +19,7 @@
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-inner">
       <div class="profile">
-        <img class="avatar" src="{{ site.data.homepage.portrait | relative_url }}" alt="Junhao Jia's GitHub avatar" width="96" height="96">
+        <img class="avatar" src="{{ site.data.portrait.image | relative_url }}" alt="{{ site.data.portrait.alt }}" width="96" height="96">
         <h1 class="profile-name">Junhao Jia</h1>
         <p class="profile-affil">Hangzhou Dianzi University</p>
         <p class="profile-affil">Incoming PhD, Tsinghua University</p>

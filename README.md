@@ -10,6 +10,7 @@ Live site: https://jonahjia.github.io/
 | --- | --- |
 | Bio, contact details and education | `_data/homepage.yml` |
 | Research experience | `_data/experience.yml` |
+| Portrait photo and alternative text | `_data/portrait.yml` |
 | Current research statement | `_data/research.yml` |
 | Honors, funding and competitions | `_data/honors.yml`, `_data/funding.yml`, `_data/competitions.yml` |
 | Patent publication and grant records | `_data/patents.yml` |
