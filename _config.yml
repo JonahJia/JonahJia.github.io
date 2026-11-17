@@ -1,0 +1,25 @@
+title: "Junhao Jia"
+description: "Junhao Jia’s academic homepage. Publications and academic profiles."
+url: "https://jonahjia.github.io"
+baseurl: ""
+lang: en
+timezone: Asia/Shanghai
+markdown: kramdown
+plugins:
+  - jekyll-email-protect
+collections:
+  - publications
+  - news
+  - showcase
+  - posts
+exclude:
+  - README.md
+  - SETUP.md
+  - CONTENT_NOTES.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - scripts
+  - preview
+  - package.json
+  - package-lock.json

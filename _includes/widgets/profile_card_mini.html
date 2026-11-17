@@ -1,0 +1,19 @@
+<aside class="profile-panel sticky-top" aria-label="Personal profile">
+  <div class="card border-0 shadow-sm bg-white">
+    <div class="card-body px-4 py-4 text-center">
+      {% if site.data.profile.portrait_url %}
+      <img src="{{ site.data.profile.portrait_url | relative_url }}" class="profile-avatar mb-4" width="176" height="176" alt="{{ site.data.profile.portrait_caption | escape }}">
+      {% endif %}
+      <h1 class="h4 mb-2">{{ site.data.profile.primary_name }}</h1>
+      {% for position in site.data.profile.positions %}<p class="small mb-1">{{ position.name }}</p>{% endfor %}
+      <p class="profile-label mb-4">Academic homepage</p>
+      {% if site.data.profile.email and site.data.profile.email != "" %}
+      <p class="small"><a href="mailto:{{ site.data.profile.email | encode_email }}">{{ site.data.profile.email | replace: "@", " (at) " }}</a></p>
+      {% endif %}
+      <div class="profile-links">
+        <a href="https://scholar.google.com/citations?user={{ site.data.profile.gscholar }}&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/{{ site.data.profile.github }}" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </div>
+</aside>

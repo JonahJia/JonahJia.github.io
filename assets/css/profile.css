@@ -1,0 +1,31 @@
+body { color: #243347; line-height: 1.65; }
+a { color: #275d8b; }
+a:hover { color: #173d60; }
+.navbar { min-height: 64px; background-color: rgba(255,255,255,.96) !important; }
+.navbar-brand { font-size: 1.1rem; letter-spacing: -.02em; }
+.nav-link { font-size: .92rem; }
+.nav-item.active .nav-link { color: #275d8b !important; }
+.profile-panel { top: 88px; }
+.profile-avatar { display: block; width: 100%; max-width: 176px; height: auto; margin: 0 auto; border-radius: 14px; }
+.profile-label { color: #677384; font-size: .85rem; }
+.profile-links { display: grid; gap: .65rem; text-align: left; }
+.profile-links a { display: flex; justify-content: space-between; padding: .65rem .8rem; background: #f3f6fa; border-radius: 7px; font-size: .88rem; }
+.profile-links a:hover { background: #e9eff6; text-decoration: none; }
+.section-label { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: #667b92; }
+.text-profile-bio { line-height: 1.85; }
+.text-profile-bio p:last-child { margin-bottom: 0; }
+.btn-academic { color: #fff; background: #275d8b; border-color: #275d8b; border-radius: 7px; padding: .65rem 1rem; font-size: .9rem; }
+.btn-academic:hover { color: #fff; background: #173d60; border-color: #173d60; }
+a:focus-visible { outline: 3px solid #c17a26; outline-offset: 4px; }
+.publications-intro > .card { margin-top: 0 !important; }
+.skip-link { position: fixed; left: 1rem; top: -5rem; z-index: 2000; background: #fff; padding: .6rem 1rem; }
+.skip-link:focus { top: .6rem; }
+@media (max-width: 767.98px) {
+  body { padding-top: 5rem; }
+  .profile-panel { position: static; margin-bottom: 1rem; }
+  .profile-avatar { max-width: 140px; }
+  .profile-links { grid-template-columns: 1fr 1fr; }
+  .navbar-brand { font-size: 1rem; }
+  .navbar-nav .nav-item { margin-left: 1rem !important; }
+  .nav-link { font-size: .85rem; }
+}
