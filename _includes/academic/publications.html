@@ -15,7 +15,6 @@
         {% include academic/authors.html paper=paper %}
         <p class="conference-name">{{ paper.conference }}</p>
         {% if paper.badges.size > 0 %}<div class="paper-distinctions">{% for badge in paper.badges %}<span{% if badge contains 'Award' %} class="award-badge"{% endif %}>{{ badge }}</span>{% endfor %}</div>{% endif %}
-        {% include academic/paper_links.html paper=paper %}
       </div>
     </article>
     {% endif %}{% endfor %}
@@ -28,7 +27,6 @@
       {% include academic/authors.html paper=paper %}
       <p class="conference-name">{{ paper.conference }}</p>
       {% if paper.equal_contribution %}<p class="contribution-note">* Equal contribution.</p>{% endif %}
-      {% include academic/paper_links.html paper=paper %}
     </article>
     {% endunless %}{% endfor %}
   </div>

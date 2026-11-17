@@ -60,6 +60,7 @@ h1, h2, h3 { line-height: 1.3; }
 .featured-papers { display: grid; gap: 20px; }
 .paper-card { display: grid; grid-template-columns: minmax(0,31%) minmax(0,1fr); gap: 28px; padding: 26px; align-items: start; }
 .paper-visual { min-width: 0; }
+.paper-copy { align-self: center; }
 .venue-badge { display: inline-block; border-radius: 100px; padding: 4px 12px; font-size: 14px; font-weight: 650; color: #f6f7ff; background: #424d66; border: 1px solid #7786a6; margin-bottom: 14px; }
 .figure-trigger { display: block; position: relative; padding: 4px 0 0; cursor: zoom-in; border-radius: 6px; }
 .figure-trigger img { width: 100%; display: block; height: auto; object-fit: contain; border-radius: 4px; }
@@ -83,7 +84,6 @@ h1, h2, h3 { line-height: 1.3; }
 .external-icon { width: .85em; height: .85em; flex-shrink: 0; vertical-align: -.05em; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 .other-papers { padding: 12px; margin-top: 20px; }
 .compact-paper { padding: 19px 19px 20px; border-radius: 11px; }
-.compact-paper:nth-child(even) { background: #f0f2f7; }
 .compact-venue { display: inline-block; font-size: 13px; font-weight: 650; padding: 2px 9px; background: #eaf0ff; color: var(--blue); border-radius: 6px; margin-bottom: 9px; }
 .compact-paper h3 { font-size: 18px; margin-bottom: 9px; }
 .compact-paper .paper-authors { margin-bottom: 5px; }
