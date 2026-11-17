@@ -2,6 +2,7 @@
 layout: default
 title: Home
 navbar_title: Home
+show_additional_sections: false
 ---
 {% assign profile = site.data.homepage %}
 <header class="profile-intro">
@@ -25,6 +26,7 @@ navbar_title: Home
 {% include academic/experience.html id="research-experience" icon="💻" title="Research Experience" entries=profile.experience %}
 {% include academic/news.html %}
 {% include academic/publications.html %}
+{% if page.show_additional_sections %}
 <section id="honors" class="academic-section" aria-labelledby="honors-heading">
   <h2 class="section-heading" id="honors-heading"><span aria-hidden="true">🏅</span> Selected Honors &amp; Awards</h2>
   <div class="surface honors-list">
@@ -46,3 +48,4 @@ navbar_title: Home
   <h2 class="section-heading" id="service-heading"><span aria-hidden="true">🤝</span> Academic Service</h2>
   <div class="surface service-card"><strong>Reviewer:</strong> {{ profile.service | join: ", " }}.</div>
 </section>
+{% endif %}

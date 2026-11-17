@@ -22,6 +22,8 @@ The data files use JSON syntax, which is valid YAML and is read by Jekyll. Educa
 
 The site uses a single-page layout: Home jumps to the top, and Publications jumps to the homepage’s publications section. The old `/publications.html` URL redirects to `/#publications`. Publication resource buttons are currently hidden; their link metadata is retained for later use.
 
+The homepage currently ends with publications. Honors, open source, and academic service remain in the source and can be restored by setting `show_additional_sections: true` in the front matter of `index.html`.
+
 Keep news entries in descending `YYYY.MM` order, link to the conference homepage, and put acceptance, oral selection and award selection in separate entries. Assets and source credits are in `assets/images/logos/` and `assets/images/publications/`. Older template data and widgets remain available but are not used by the new homepage.
 
 ## GitHub Pages deployment
