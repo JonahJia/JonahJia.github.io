@@ -1,0 +1,8 @@
+{% if site.data.funding.size > 0 %}
+{% if include.sidebar %}<h1 class="section-title" id="funding">💰 Funding</h1>{% else %}<section id="funding" class="academic-section" aria-labelledby="funding-heading"><h2 class="section-heading" id="funding-heading"><span aria-hidden="true">💰</span> Funding</h2>{% endif %}
+<div class="{% if include.sidebar %}scroll-box{% else %}surface funding-list{% endif %}" tabindex="0" role="region" aria-label="Research funding"><ul class="date-list">
+{% for item in site.data.funding %}
+  <li>{% if item.year %}<span class="item-date">{{ item.year }}:</span>{% endif %}<span class="item-body">{{ item.program }} (<strong>{% if item.category %}{{ item.category }}, {% endif %}{{ item.role }}{% if item.count %}, {{ item.count }} projects{% endif %}{% if item.amount %}, CNY {{ item.amount }}{% endif %}{% if item.distinction %}, {{ item.distinction }}{% endif %}</strong>)</span></li>
+{% endfor %}
+</ul></div>{% if include.sidebar %}<div class="scroll-hint"><span aria-hidden="true">⬆</span> Scrollable</div>{% else %}</section>{% endif %}
+{% endif %}

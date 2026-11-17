@@ -9,6 +9,7 @@
 [data-theme="dark"] .sun-icon { display: block; }
 [data-theme="dark"] .moon-icon { display: none; }
 .theme-toggle .ui-icon { width: 13px; height: 13px; }
+.profile-location .ui-icon { width: 13px; height: 13px; vertical-align: -2px; }
 .skip-link { position: fixed; top: -70px; left: 12px; z-index: 500; padding: 8px 14px; border-radius: 8px; background: var(--surface); }
 .skip-link:focus { top: 12px; }
 a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
@@ -22,13 +23,10 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 3px s
 .paper-authors a:hover { color: var(--accent); text-decoration: none; }
 .author-self { color: var(--author-color); font-weight: 700; }
 .equal-mark, .corresponding-mark { vertical-align: super; font-size: .78em; line-height: 0; }
-.featured-paper .work-media { display: flex; align-items: center; }
-.figure-trigger { display: block; width: 100%; padding: 42px 8px 12px; cursor: zoom-in; }
+.featured-paper .work-media { display: flex; flex-direction: column; align-items: stretch; justify-content: center; }
+.featured-paper .badge { position: static; align-self: flex-start; margin: 10px 10px 0; }
+.figure-trigger { display: block; width: 100%; padding: 8px 8px 12px; cursor: zoom-in; }
 .work-card .figure-trigger img { width: 100%; height: auto; padding: 0; aspect-ratio: auto; }
-.paper-distinctions { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 9px; }
-.paper-distinctions span { display: inline-block; font-size: 12px; padding: 2px 8px; border-radius: 5px; background: var(--accent-soft); color: var(--accent-ink); font-weight: 600; }
-.paper-distinctions .award-badge { color: #8a5b05; background: #fff4d8; }
-[data-theme="dark"] .paper-distinctions .award-badge { color: #f2d390; background: #493c24; }
 .publications-scroll .paper-row:nth-child(even) { background: transparent; }
 .scroll-box { overscroll-behavior: contain; }
 .item-body { min-width: 0; }
@@ -40,7 +38,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 3px s
 @media (max-width: 1000px) {
   .work-body { align-self: auto; }
   .featured-paper .work-media { width: 100%; }
-  .figure-trigger { padding: 44px 16px 12px; }
+  .figure-trigger { padding: 8px 16px 12px; }
   .work-card .figure-trigger img { max-height: 300px; object-fit: contain; }
 }
 @media (max-width: 640px) {

@@ -4,14 +4,13 @@
 {% for paper in site.data.papers %}{% if paper.featured %}
 <article class="work-card featured-paper" id="paper-{{ paper.id }}">
   <div class="work-media">
-    <span class="badge">{{ paper.venue }}</span>
+    <span class="badge">{% include academic/venue_label.html paper=paper %}</span>
     <a class="figure-trigger" href="{{ paper.cover | relative_url }}" data-figure-caption="{{ paper.title | escape }}" aria-label="Enlarge framework diagram for {{ paper.title | escape }}"><img src="{{ paper.cover | relative_url }}" alt="{{ paper.alt | escape }}" loading="lazy"></a>
   </div>
   <div class="work-body">
     <h3 class="work-title"><a href="{{ paper.links.Paper }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a></h3>
     {% include academic/authors.html paper=paper %}
     <p class="work-venue"><i>{{ paper.conference }}</i></p>
-    {% if paper.badges.size > 0 %}<div class="paper-distinctions">{% for badge in paper.badges %}<span{% if badge contains 'Award' %} class="award-badge"{% endif %}>{{ badge }}</span>{% endfor %}</div>{% endif %}
   </div>
 </article>
 {% endif %}{% endfor %}

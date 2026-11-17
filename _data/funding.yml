@@ -1,0 +1,29 @@
+[
+  {
+    "program": "National Undergraduate Innovation and Entrepreneurship Training Program of China",
+    "category": "Key Support Field Program",
+    "role": "Project Leader",
+    "amount": "20,000.00"
+  },
+  {
+    "program": "National Undergraduate Innovation and Entrepreneurship Training Program of China",
+    "category": "General Program",
+    "role": "Co-leader",
+    "amount": "10,000.00"
+  },
+  {
+    "program": "Zhejiang Provincial Undergraduate Scientific and Technological Innovation Activities Program",
+    "role": "Project Leader"
+  },
+  {
+    "program": "Zhejiang Provincial Undergraduate Scientific and Technological Innovation Activities Program",
+    "role": "Co-leader",
+    "count": 3
+  },
+  {
+    "program": "\"Danghong Cup\" Excellence in Scientific Research and Education Special Program of the School of Computer Science at Hangzhou Dianzi University",
+    "role": "Project Leader",
+    "amount": "5,000.00",
+    "distinction": "Ranked 1st in the School"
+  }
+]

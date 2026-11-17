@@ -74,9 +74,13 @@ h1, h2, h3 { line-height: 1.3; }
 .author-self { font-weight: 750; color: var(--purple); }
 .equal-mark, .corresponding-mark { font-size: .78em; line-height: 0; vertical-align: super; margin-left: 1px; }
 .conference-name { font-style: italic; color: var(--muted); font-size: 14px; line-height: 1.6; margin: 0 0 12px; }
-.paper-distinctions { display: flex; flex-wrap: wrap; gap: 7px; margin: 0 0 12px; }
-.paper-distinctions span { padding: 2px 9px; border-radius: 5px; font-size: 12px; font-weight: 650; background: #edf2ff; color: #2858bc; }
-.paper-distinctions .award-badge { color: #8a5b05; background: #fff4d8; }
+.badge-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 12px; }
+.badge-row img { display: block; height: 20px; }
+.funding-list { max-height: 350px; overflow-y: auto; padding: 12px; }
+.funding-list ul { list-style: none; margin: 0; padding: 0; }
+.funding-list li { display: flex; gap: 16px; padding: 12px 15px; border-radius: 11px; }
+.funding-list li:nth-child(even) { background: #f0f2f7; }
+.funding-list .item-date { color: var(--muted); font-style: italic; }
 .paper-links { display: flex; flex-wrap: wrap; gap: 8px; font-size: 13px; }
 .paper-links a { display: inline-flex; gap: 8px; align-items: center; border: 1px solid #dbe3f1; padding: 2px 9px; border-radius: 5px; }
 .paper-links a:hover { text-decoration: none; background: var(--blue-soft); }

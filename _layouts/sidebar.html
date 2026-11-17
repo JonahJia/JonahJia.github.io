@@ -24,10 +24,13 @@
         <p class="profile-affil">Hangzhou Dianzi University</p>
         <p class="profile-affil">Incoming PhD, Tsinghua University</p>
         <p class="profile-bio"><em>Agents &amp; AI Safety</em></p>
+        <p class="profile-location"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg> Haidian, Beijing, China</p>
       </div>
       <nav class="nav" aria-label="Page navigation"><ul>
         {% for item in site.data.sidebar_navigation %}<li><a class="nav-link" href="#{{ item.anchor }}">{{ item.name }}</a></li>{% endfor %}
-        {% if page.show_additional_sections %}<li><a class="nav-link" href="#honors">Honors</a></li><li><a class="nav-link" href="#services">Services</a></li>{% endif %}
+        {% if site.data.honors.scholarships.size > 0 or site.data.honors.distinctions.size > 0 %}<li><a class="nav-link" href="#honors">Honors</a></li>{% endif %}
+        {% if site.data.funding.size > 0 %}<li><a class="nav-link" href="#funding">Funding</a></li>{% endif %}
+        {% if page.show_additional_sections %}<li><a class="nav-link" href="#services">Services</a></li>{% endif %}
         {% if page.show_software and site.data.software.size > 0 %}<li><a class="nav-link" href="#software">Software</a></li>{% endif %}
       </ul></nav>
       <ul class="social">

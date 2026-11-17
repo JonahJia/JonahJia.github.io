@@ -1,0 +1,33 @@
+{
+  "distinctions": [],
+  "scholarships": [
+    {
+      "name": "First-Class Scholarship, Hangzhou Dianzi University",
+      "amount": "1,500.00",
+      "note": "Six awards across three consecutive years; twice annually"
+    },
+    {
+      "year": "2025, 2026",
+      "name": "Zhejiang Provincial Government Scholarship",
+      "amount": "5,000.00"
+    },
+    {
+      "year": "2024, 2025",
+      "name": "Tailong Scholarship",
+      "amount": "3,000.00",
+      "note": "Only student university-wide to receive this scholarship in two consecutive years"
+    },
+    {
+      "year": "2024",
+      "name": "National Scholarship of China",
+      "amount": "10,000.00",
+      "note": "First sophomore recipient in the School's history"
+    },
+    {
+      "year": "2024",
+      "name": "Danghong Scholarship",
+      "amount": "2,000.00",
+      "note": "One of only two sophomore recipients"
+    }
+  ]
+}

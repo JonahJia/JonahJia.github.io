@@ -11,6 +11,7 @@ show_additional_sections: false
     <h1>{{ profile.name }}</h1>
     <p class="profile-position">Incoming PhD Student, College of AI, Tsinghua University</p>
     <p class="profile-position secondary">Undergraduate Student, Hangzhou Dianzi University</p>
+    <p class="profile-position secondary"><span aria-hidden="true">📍</span> Haidian, Beijing, China</p>
     <div class="profile-contact">
       <a href="mailto:{{ profile.email }}"><span aria-hidden="true">✉</span> {{ profile.email }}</a>
       <a href="{{ profile.scholar }}" target="_blank" rel="noopener noreferrer">Google Scholar</a>
@@ -21,18 +22,15 @@ show_additional_sections: false
 <section id="about" class="about-section" aria-labelledby="about-heading">
   <h2 id="about-heading" class="about-heading">About Me</h2>
   {% for paragraph in profile.bio %}<p>{% if forloop.index == 2 %}{{ site.data.research.summary }}{% else %}{{ paragraph }}{% endif %}</p>{% endfor %}
+  {% include academic/metrics.html %}
 </section>
 {% include academic/experience.html id="education" icon="📖" title="Education" entries=profile.education %}
 {% include academic/experience.html id="research-experience" icon="💻" title="Research Experience" entries=profile.experience %}
 {% include academic/news.html %}
 {% include academic/publications.html %}
+{% include academic/honors.html %}
+{% include academic/funding.html %}
 {% if page.show_additional_sections %}
-<section id="honors" class="academic-section" aria-labelledby="honors-heading">
-  <h2 class="section-heading" id="honors-heading"><span aria-hidden="true">🏅</span> Selected Honors &amp; Awards</h2>
-  <div class="surface honors-list">
-    {% for award in profile.awards %}<div class="honor-row"><span class="honor-year">{{ award.year }}</span><span>{{ award.name }}</span></div>{% endfor %}
-  </div>
-</section>
 <section id="open-source" class="academic-section" aria-labelledby="opensource-heading">
   <h2 class="section-heading" id="opensource-heading"><span aria-hidden="true">🛠️</span> Open Source</h2>
   <div class="surface open-source-card">
